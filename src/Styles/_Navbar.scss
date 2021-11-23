@@ -1,0 +1,69 @@
+nav {
+    .nav-wrapper {
+        .vertical-nav-wrapper {
+            background: transparent linear-gradient(169deg, #111072 0%, #089752 100%);
+            border-radius: 0px 20px 20px 0px;
+            width: 225px;
+            height: 100vh;
+            border: 1px solid yellow;
+            box-shadow: 0px 0px 20px #0000002B;
+            .upper-logo {
+                border-radius: 0px 20px 0px 0px;
+                height: 121px;
+                padding: 15px 63px 22px 63px;
+                background: transparent linear-gradient(140deg, #ffffff 0%, #f3f3f3 100%);
+                img {
+                    width: 100px;
+                    height: 84px;
+                }
+            }
+            .main-links {
+                height: 100%;
+                border-radius: 0px 0px 20px 0px;
+                // background: transparent linear-gradient(169deg, #111072 0%, #089752 100%);
+                padding: 20px 0px 0px 0px;
+                ul {
+                    li {
+                        width: 212px;
+                        height: 30px;
+                        list-style-type: none;
+                        color: #ffffff;
+                        // border: 1px solid #ffffff;
+                        a {
+                            padding: 4px 0px 4px 0px;
+                            display: block;
+                            text-decoration: none;
+                            height: 30px ;
+                            color: #FFFFFF;
+                        }
+                        .active {
+                            background: transparent linear-gradient(289deg, #2d2ba8 0%, #089752 100%);
+                            box-shadow: 0px 0px 20px #0000002b;
+                            border-radius: 4px 0px 0px 4px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .horizontal-nav-wrapper {
+            width: 100%;
+            height: 63px;
+            
+            .horizontal-nav-container{
+                margin: 14.5px 15px 14.5px 15px;
+                .user-info{
+                    img{
+                        width: 28px;
+                        height: 28px;
+                        border-radius: 50%;
+                    }
+                }
+                .language-logout{
+                    margin-left: 45px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
