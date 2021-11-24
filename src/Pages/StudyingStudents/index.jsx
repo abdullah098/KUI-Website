@@ -126,8 +126,9 @@ const StudyingStudents = () => {
         },
         {
             title: 'Name',
-            dataIndex: 'name',
+            // dataIndex: 'name',
             key: 'Name',
+            render: Name => <a href="">{Name.name}</a>,
         },
         {
             title: 'Iqama Country',
