@@ -99,8 +99,8 @@ const Navbar = () => {
                     </div>
 
                     {/* horizontal navbar  */}
-                    <div className="horizontal-nav-wrapper ml-14 border">
-                        <div className="horizontal-nav-container d-flex  border border-danger">
+                    <div className="horizontal-nav-wrapper ml-14">
+                        <div className="horizontal-nav-container d-flex ">
 
                             <div className="user-info d-flex">
                                 <img src={User} alt="logo" />

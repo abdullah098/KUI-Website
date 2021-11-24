@@ -1,0 +1,163 @@
+.dashboard-wrapper {
+    .dashboard-content {
+        .student-amount-schoprg {
+            .student-card {
+                // width: 258px;
+                height: 123px;
+                box-shadow: 0px 0px 20px #e3e3e3;
+                border: 1px solid #e2e2e2;
+                border-radius: 8px;
+                padding: 14px 24px 14px 24px;
+                color: #04041c;
+
+                // svg modified for the card
+                #student-with-graduation-cap {
+                    width: 30px;
+                    height: 38px;
+                }
+                #Path_597,
+                #Path_598 {
+                    fill: #343379;
+                }
+                // svg modifies for the card end here
+                .num-total {
+                    p {
+                        color: #686874;
+                    }
+                }
+            }
+
+            .middle-card-wraper {
+                height: 123px;
+                .amount-card {
+                    width: 100%;
+                    height: 100%;
+                    background: #ffffff;
+                    box-shadow: 0px 0px 20px #e3e3e3;
+                    border: 1px solid #e2e2e2;
+                    border-radius: 8px;
+                    padding: 14px 24px 14px 24px;
+                    color: #04041c;
+                    .col-2 {
+                        position: relative;
+                        // border-left: 1px solid grey;
+                        // border-right: 1px solid grey;
+                        hr {
+                            position: absolute;
+                            transform: rotate(90deg);
+                            top: 40px;
+                            left: -22.5px;
+                            width: 75px;
+                        }
+                    }
+                }
+            }
+
+            .scholorship-prog {
+                height: 219px;
+                background: #ffffff;
+                box-shadow: 0px 0px 20px #e3e3e3;
+                border: 1px solid #e2e2e2;
+                border-radius: 8px;
+                padding: 14px 24px 14px 24px;
+                color: #04041c;
+                h2{
+                    border-top: none !important;
+                    border-left: none !important;
+                    border-right: none !important;
+                }
+                .table-sch {
+                    overflow-y: auto;
+                    .table-scholorship {
+                        // overflow-y: auto;
+                        table {
+                            // overflow-y: auto;
+                            thead {
+                                background: #fcfcfc;
+                                // position: sticky;
+                            }
+                            tbody {
+                                background: #fcfcfc;
+                                // overflow-y: auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .collages{
+                height: 290px;
+                background: #ffffff;
+                box-shadow: 0px 0px 20px #e3e3e3;
+                border: 1px solid #e2e2e2;
+                border-radius: 8px;
+                margin-top: 25px;
+                padding: 14px 24px 14px 24px;
+                color: #04041c;
+            }
+
+            .gender-prop{
+                height: 237px;
+                background: #ffffff;
+                box-shadow: 0px 0px 20px #e3e3e3;
+                border: 1px solid #e2e2e2;
+                border-radius: 8px;
+                margin-top: 20px;
+                padding: 14px 24px 14px 24px;
+                color: #04041c;
+            }
+
+            // .scholorship-prog {
+            //     // width: 305px;
+            //     height: 219px;
+            //     background: #FFFFFF;
+            //     box-shadow: 0px 0px 20px #e3e3e3;
+            //     border: 1px solid #e2e2e2;
+            //     border-radius: 8px;
+            //     padding: 14px 24px 14px 24px;
+            //     color: #04041c;
+            //     .table-scholorship{
+            //         overflow-y: auto;
+            //         table{
+            //             overflow-y: auto;
+            //             thead{
+            //                 background: #FCFCFC;
+            //                 // position: sticky;
+            //             }
+            //             tbody{
+            //                 background: #FCFCFC;
+            //             }
+            //         }
+            //     }
+            // }
+
+            .amount-spend-wrapper {
+                padding: 20px 12px 0 0;
+                .amount-spend-graph {
+                    height: 391px;
+                    background: #ffffff;
+                    box-shadow: 0px 0px 20px #e3e3e3;
+                    border: 1px solid #e2e2e2;
+                    border-radius: 8px;
+                }
+            }
+
+            .revnew-top-10-wrapper {
+                padding: 20px 12px 0 0;
+                .revnew-top-10-chart {
+                    height: 528px;
+                    background: #ffffff;
+                    box-shadow: 0px 0px 20px #e3e3e3;
+                    border: 1px solid #e2e2e2;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+}
+
+.landing-name {
+    h5 {
+        color: #04041c;
+    }
+}

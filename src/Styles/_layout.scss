@@ -1,6 +1,10 @@
 nav {
+  
     .nav-wrapper {
+        // position: fixed;
         .vertical-nav-wrapper {
+            position: fixed;
+            left: 0;
             background: transparent linear-gradient(169deg, #111072 0%, #089752 100%);
             border-radius: 0px 20px 20px 0px;
             width: 225px;
@@ -49,9 +53,13 @@ nav {
         .horizontal-nav-wrapper {
             width: 100%;
             height: 63px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            // margin-left: 250px;
             
             .horizontal-nav-container{
-                margin: 14.5px 15px 14.5px 15px;
+                margin: 14.5px 15px 14.5px 239px;
                 .user-info{
                     img{
                         width: 28px;
@@ -67,3 +75,14 @@ nav {
         }
     }
 }
+
+
+
+main{
+    margin: 87px 24px 0px 249px;
+    border: 1px solid red;
+}
+
+
+
+
