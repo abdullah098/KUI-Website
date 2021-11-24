@@ -48,7 +48,7 @@ const Dashboard = () => {
                     <h5 className="f-14 m-0">Dashboard</h5>
                 </div>
 
-                <div className="dashboard-content container-fluid">
+                <div className="dashboard-content container-fluid mt-3">
 
 
 
@@ -148,7 +148,7 @@ const Dashboard = () => {
 
 
                         {/* right screen card  */}
-                        <div className="right-screen-row col-3">
+                        <div className="right-screen-row col-3 p-0">
 
                             <div className="scholorship-prog card border border-danger">
                                 <h2 className="f-16 p-0 border card-header bg-white">Scholarship Program</h2>
