@@ -1,0 +1,37 @@
+.student-info-and-grading-wrapper {
+    .back-button {
+        .back-btn {
+            border: none !important;
+            color: #2f2f75 !important;
+        }
+    }
+    .student-info-wrapper {
+        background: #ffffff;
+        border: 1px solid #d4d4d4;
+        border-radius: 4px;
+        padding: 17px 30px 17px 30px;
+        .student-info {
+            .scholorship-semester-cgpa {
+                .scholorship {
+                    border-right: 1px solid grey;
+                    padding-right: 25px;
+                }
+                .semester {
+                    border-right: 1px solid grey;
+                    padding-right: 25px;
+                }
+                .cgpa {
+                    border-right: 1px solid grey;
+                    padding-right: 25px;
+                }
+            }
+        }
+    }
+
+    .result-card-wrapper {
+        padding: 29px 32px 29px 32px;
+        background: #ffffff ;
+        border: 1px solid #d4d4d4;
+        border-radius: 4px;
+    }
+}

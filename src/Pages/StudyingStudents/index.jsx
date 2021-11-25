@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button, Table } from 'antd';
 import ExportSvg from '../../Assets/Icons/export.svg';
 import SearchBar from '../../Components/Common/search';
@@ -6,7 +7,7 @@ import Filter from '../../Components/Common/DropdownFilter';
 
 const StudyingStudents = () => {
 
-    
+
 
     // table data 
     // const { Column, ColumnGroup } = Table;
@@ -129,7 +130,10 @@ const StudyingStudents = () => {
             title: 'Name',
             // dataIndex: 'name',
             key: 'Name',
-            render: Name => <a href="">{Name.name}</a>,
+            render: student =>
+                <Link to={`/studying-students/${student.id}`} dataSource={student}>
+                    {student.name}
+                </Link>
         },
         {
             title: 'Iqama Country',

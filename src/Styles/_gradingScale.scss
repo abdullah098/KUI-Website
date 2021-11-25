@@ -1,0 +1,27 @@
+.grading-system-wrapper {
+    background: #ffffff ;
+    box-shadow: 0px 3px 15px #85858529;
+    border-radius: 4px;
+    .grading-scale-points{
+        
+        h3{
+            padding: 23px 26px 23px 26px;
+        }
+        h2{
+            padding: 7px 26px 7px 26px;
+        }
+    }
+    .grading-chart{
+        
+        h3{
+            padding: 23px 26px 23px 26px;
+            span{
+                background: #39EF6A;
+                color: #39EF6A;
+            }
+        }
+        h2{
+            padding: 7px 26px 7px 26px;
+        }
+    }
+}
