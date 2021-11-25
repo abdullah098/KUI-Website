@@ -1,12 +1,11 @@
 import React from 'react';
-import { Button, Input, Space, Table } from 'antd';
+import { Button, Table } from 'antd';
 import ExportSvg from '../../Assets/Icons/export.svg';
 import SearchBar from '../../Components/Common/search';
 
 const StudyingStudents = () => {
 
-    const { Search } = Input;
-    const onSearch = value => console.log(value);
+    
 
     // table data 
     // const { Column, ColumnGroup } = Table;

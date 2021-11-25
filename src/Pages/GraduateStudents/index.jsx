@@ -1,5 +1,5 @@
 import React from 'react';
-import { Select, Button, Input, Space, Table } from 'antd';
+import { Select, Button, Table } from 'antd';
 
 import SearchBar from '../../Components/Common/search';
 
@@ -8,8 +8,6 @@ import ExportSvg from '../../Assets/Icons/export.svg';
 const GraduateStudents = () => {
 
 
-    const { Search } = Input;
-    const onSearch = value => console.log(value);
 
 
     // select college
