@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'antd';
+import { Button, Select, Table } from 'antd';
 import BackButtonArrow from '../../Assets/Icons/backButtonArrow.svg';
 import GradingScale from '../../Components/Common/gradingScale';
 
@@ -22,6 +22,90 @@ const StudentInfoAndGrading = () => {
             educationLevel: 1
         }
     ];
+
+    const { Option } = Select;
+    const handleChange = (value) => {
+        console.log(`selected ${value}`);
+    }
+
+
+
+    // current sem table data
+    const current_sem_data_Source = [
+        {
+            key: '1',
+            course_name: 'المدخل لعلوم الحديث الشريف',
+            course_code: '10000201',
+            division: 'First',
+            credits: '3',
+            created: '2021-01-27 15:38:31',
+            updated: '2021-01-27 15:38:31',
+        },
+        {
+            key: '2',
+            course_name: 'المدخل لعلوم الحديث الشريف',
+            course_code: '10000201',
+            division: 'First',
+            credits: '3',
+            created: '2021-01-27 15:38:31',
+            updated: '2021-01-27 15:38:31',
+        },
+        {
+            key: '3',
+            course_name: 'المدخل لعلوم الحديث الشريف',
+            course_code: '10000201',
+            division: 'First',
+            credits: '3',
+            created: '2021-01-27 15:38:31',
+            updated: '2021-01-27 15:38:31',
+        },
+        {
+            key: '4',
+            course_name: 'المدخل لعلوم الحديث الشريف',
+            course_code: '10000201',
+            division: 'First',
+            credits: '3',
+            created: '2021-01-27 15:38:31',
+            updated: '2021-01-27 15:38:31',
+        },
+    ];
+    const current_Sem_columns = [
+        {
+            title: 'Course code',
+            dataIndex: 'course_code',
+            key: 'course_code',
+        },
+        {
+            title: 'Course Name',
+            dataIndex: 'course_name',
+            key: 'course_name',
+        },
+        {
+            title: 'Division',
+            dataIndex: 'division',
+            key: 'division',
+        },
+        {
+            title: 'Credits',
+            dataIndex: 'credits',
+            key: 'credits',
+        },
+        {
+            title: 'Created',
+            dataIndex: 'created',
+            key: 'created',
+        },
+        {
+            title: 'Updated',
+            dataIndex: 'updated',
+            key: 'updated',
+        },
+    ];
+
+
+
+
+
 
 
 
@@ -95,7 +179,7 @@ const StudentInfoAndGrading = () => {
                     <h4 className="f-16 mb-15">Result Card</h4>
 
                     {/* qualification */}
-                    <h4 className="f-12 mb-0 fw-bold">Qualification</h4> 
+                    <h4 className="f-12 mb-0 fw-bold">Qualification</h4>
 
                     {/* collage department major educationLevel  */}
                     <div className="collage-department-educationlevel d-flex">
@@ -118,6 +202,55 @@ const StudentInfoAndGrading = () => {
                     <div className="grading-scale mt-30">
                         <GradingScale />
                     </div>
+
+
+                    {/* show all sem export  */}
+                    <div className="show-all-sem-export mt-30">
+                        <h4 className="f-14">Show</h4>
+
+                        <div className="all-sem-export d-flex justify-content-between">
+
+                            {/* show by result  */}
+                            <div classname="sem-selector">
+                                <Select className="select-custom" defaultValue="lucy" style={{ width: 156 }} onChange={handleChange}>
+                                    <Option value="jack">All Semester</Option>
+                                    <Option value="lucy">1st Semester</Option>
+                                    <Option value="Yiminghe">2nd Semester</Option>
+                                </Select>
+
+                            </div>
+
+                            {/* export to pdf btn  */}
+                            <div className="export-pdf-btn">
+                                <Button className="export-btn">
+                                    Export To PDF
+                                </Button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    {/* current semester */}
+                    <div className="current-semester mt-30">
+                        <h4 className="f-16 mb-15 fw-bold text-center">Current semester Result card ( 2020/2021 Spring Semester )</h4>
+
+                        {/* curent sem table  */}
+                        <Table dataSource={current_sem_data_Source } columns={current_Sem_columns} pagination={false} />
+
+
+                    </div>
+
+
+                    {/* reported academic record  */}
+                    <div className="reported-academic-record mt-30">
+                        <h4 className="f-16 mb-15 fw-bold text-center">Reported academic record 2009/2010 Fall Semester</h4>
+
+
+                        {/* reported academic record table  */}
+
+                        
+                    </div>
+
 
 
 

@@ -30,8 +30,49 @@
 
     .result-card-wrapper {
         padding: 29px 32px 29px 32px;
-        background: #ffffff ;
+        background: #ffffff;
         border: 1px solid #d4d4d4;
         border-radius: 4px;
+
+        .show-all-sem-export {
+            .all-sem-export {
+                .sem-selector {
+                    .select-custom {
+                        background: #ffffff !important;
+                        border: 1px solid #cbcbcb !important;
+                        border-radius: 4px !important;
+                    }
+                }
+                .export-pdf-btn {
+                    .export-btn {
+                        border: 1px solid var(--unnamed-color-2f2f75) !important;
+                        background: #ffffff !important;
+                        border: 1px solid #2f2f75 !important;
+                        border-radius: 4px !important;
+                        color: #2f2f75 !important;
+                    }
+                }
+            }
+        }
+
+        .current-semester {
+            background: #ffffff ;
+            box-shadow: 0px 3px 15px #85858529;
+            border: 1px solid #e8e8e8;
+            border-radius: 4px;
+            h4{
+                padding: 16px 0px 16px 0px;
+            }
+        }
+
+        .reported-academic-record {
+            background: #ffffff ;
+            box-shadow: 0px 3px 15px #85858529;
+            border: 1px solid #e8e8e8;
+            border-radius: 4px;
+            h4{
+                padding: 16px 0px 16px 0px;
+            }
+        }
     }
 }
