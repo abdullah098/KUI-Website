@@ -1,12 +1,45 @@
 import React from 'react';
-import { Button, Input, Space, Table } from 'antd';
-import ExportSvg from '../../Assets/Icons/export.svg';
+import { Select, Button, Input, Space, Table } from 'antd';
+
 import SearchBar from '../../Components/Common/search';
 
-const StudyingStudents = () => {
+import ExportSvg from '../../Assets/Icons/export.svg';
+
+const GraduateStudents = () => {
+
 
     const { Search } = Input;
     const onSearch = value => console.log(value);
+
+
+    // select college
+    const { Option } = Select;
+    const handleChange = (value) => {
+        // console.log(`selected ${value}`);
+    }
+    const slect_college_data = [
+        {
+            id: '1',
+            title: 'English',
+        },
+        {
+            id: '2',
+            title: 'Arabic',
+        },
+        {
+            id: '3',
+            title: 'Persian',
+        }, {
+            id: '4',
+            title: 'Turkish',
+        },
+        {
+            id: '5',
+            title: 'Urdu',
+        }
+    ];
+
+
 
     // table data 
     // const { Column, ColumnGroup } = Table;
@@ -165,60 +198,80 @@ const StudyingStudents = () => {
     ];
 
 
+
+
+
+
     return (
         <>
-            <div className="studying-students-wrapper">
+            <div className="graduate-students-wrapper">
 
-                {/* landing name  */}
+                {/* landing name */}
                 <div className="landing-name">
                     <h5 className="f-14 m-0">Studying Students</h5>
                 </div>
 
                 {/* main content  */}
-                <div className="studying-students-content">
+                <div className="graduate-students-content">
 
-                    {/* top bar  */}
-                    <div className="search-function-top d-flex justify-content-between">
+                    {/* top bar select college */}
+                    <div className="select-college mt-24">
+                        <h3 className="f-14 mb-0 ">Select College</h3>
+                        <Select defaultValue="English" style={{ width: 201 }} onChange={handleChange}>
+                            {slect_college_data.map(item => {
+                                return <Option key={item.id} value={item.title}>{item.title}</Option>
+                            })}
+                        </Select>
+                    </div>
 
-                        {/* students enrolled in the program + filter  */}
-                        <div className="student-enroll-fliter d-flex">
-                            <h4 className="f-16 m-0">Students Enrolled: 15</h4>
+                    {/* table section */}
+                    <div className="table-top-bar mt-24">
+
+                        {/* top  bar */}
+                        <div className="top-searchbar-filter d-flex justify-content-between">
+
+                            {/* students enrolled in the program + filter  */}
+                            <div className="student-graduated-fliter d-flex">
+                                <h4 className="f-16 m-0">Students Enrolled: 15</h4>
 
 
+                            </div>
+
+                            {/* export and searchbar  */}
+                            <div className="search-export d-flex">
+                                <Button className="me-2">
+                                    <img className="me-2" src={ExportSvg} alt="exp" />
+                                    Export
+                                </Button>
+                                <SearchBar />
+                            </div>
                         </div>
 
-                        {/* export and searchbar  */}
-                        <div className="search-export d-flex">
-                            <Button className="me-2">
-                                <img className="me-2" src={ExportSvg} alt="exp" />
-                                Export
-                            </Button>
-                            <SearchBar />
+                        {/* table content */}
+                        <div className="graduated-students-table">
+                            <Table
+                                dataSource={dataSource}
+                                columns={columns}
+                                pagination={{
+                                    pageSize: 7,
+                                    showTotal: (total, currentSize) =>
+                                        `Showing: ${currentSize[1]} of ${total}`,
+                                    size: "small",
+                                    hideOnSinglePage: true,
+                                }} />
                         </div>
+
+
+
                     </div>
 
 
-                    {/* table  */}
-                    <div className="studying-students-table">
-                        <Table
-                            dataSource={dataSource}
-                            columns={columns}
-                            pagination={{
-                                pageSize: 7,
-                                showTotal: (total, currentSize) =>
-                                    `Showing: ${currentSize[1]} of ${total}`,
-                                size: "small",
-                                hideOnSinglePage: true,
-                            }} />
-                    </div>
 
 
                 </div>
-
-
             </div>
         </>
     );
 }
 
-export default StudyingStudents;
+export default GraduateStudents;
