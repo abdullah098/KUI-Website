@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Table } from 'antd';
 import ExportSvg from '../../Assets/Icons/export.svg';
 import SearchBar from '../../Components/Common/search';
+import Filter from '../../Components/Common/DropdownFilter';
 
 const StudyingStudents = () => {
 
@@ -181,8 +182,8 @@ const StudyingStudents = () => {
 
                         {/* students enrolled in the program + filter  */}
                         <div className="student-enroll-fliter d-flex">
-                            <h4 className="f-16 m-0">Students Enrolled: 15</h4>
-
+                            <h4 className="f-16 mb-0 mr-30">Students Enrolled: 15</h4>
+                            <Filter />
 
                         </div>
 

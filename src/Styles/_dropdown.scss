@@ -1,0 +1,32 @@
+.filter-dropdown {
+    background: #f2f2f2 !important;
+    border-radius: 4px 4px 0px 0px !important;
+}
+.filter-dropdown-dropdown-menu {
+    width: 257px !important;
+    padding: 25px 23px 25px 23px !important;
+    .filter-dropdown-content {
+        .gpa {
+            .input-from-to {
+                width: 74px !important;
+                height: 34px !important;
+            }
+        }
+        .cancle-apply {
+            .cancle {
+                border: 1px solid var(--unnamed-color-2f2f75) !important;
+                background: #ffffff !important;
+                border: 1px solid #2f2f75 !important;
+                border-radius: 4px !important;
+                color: #2f2f75 !important;
+            }
+            .apply {
+                background: var(--unnamed-color-089752) !important;
+                background: #089752 !important;
+                border-radius: 4px !important;
+                color: #ffffff !important;
+                // margin-right: 15px !important;
+            }
+        }
+    }
+}

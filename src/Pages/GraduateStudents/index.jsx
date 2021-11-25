@@ -2,6 +2,7 @@ import React from 'react';
 import { Select, Button, Table } from 'antd';
 
 import SearchBar from '../../Components/Common/search';
+import Filter from '../../Components/Common/DropdownFilter';
 
 import ExportSvg from '../../Assets/Icons/export.svg';
 
@@ -229,9 +230,9 @@ const GraduateStudents = () => {
                         <div className="top-searchbar-filter d-flex justify-content-between">
 
                             {/* students enrolled in the program + filter  */}
-                            <div className="student-graduated-fliter d-flex">
-                                <h4 className="f-16 m-0">Students Enrolled: 15</h4>
-
+                            <div className="student-graduated-fliter d-flex ">
+                                <h4 className="f-16 mb-0 mr-30">Students Enrolled: 15</h4>
+                                <Filter />
 
                             </div>
 
