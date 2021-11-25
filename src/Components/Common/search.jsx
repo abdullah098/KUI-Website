@@ -1,5 +1,6 @@
 import React from 'react';
 import { Input, Space } from 'antd';
+import SearchSvg from '../../Assets/Icons/search.svg';
 
 const Search = () => {
 
@@ -9,8 +10,9 @@ const Search = () => {
     return (
         <>
             <Space direction="vertical">
-                <Search placeholder="input search text" onSearch={onSearch} style={{ width: 200 }} />
-                {/* <Search placeholder="input search text" allowClear onSearch={onSearch} style={{ width: 200 }} /> */}
+                <Input 
+                    prefix={ <img src={SearchSvg} ></img> }
+                />
 
             </Space>
         </>
