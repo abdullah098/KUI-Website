@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Select, Table } from 'antd';
 import BackButtonArrow from '../../Assets/Icons/backButtonArrow.svg';
 import GradingScale from '../../Components/Common/gradingScale';
+import ResultCard from '../../Components/Common/resultCard';
 
 const StudentInfoAndGrading = () => {
 
@@ -246,8 +247,8 @@ const StudentInfoAndGrading = () => {
                         <h4 className="f-16 mb-15 fw-bold text-center">Reported academic record 2009/2010 Fall Semester</h4>
 
 
-                        {/* reported academic record table  */}
-
+                        {/* reported academic record table  */}     
+                        <ResultCard />
                         
                     </div>
 
