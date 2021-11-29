@@ -7,28 +7,40 @@ import GraduateStudents from './Pages/GraduateStudents/index';
 import AcademicCalendar from './Pages/AcademicCalendar/index';
 import StudentInfoAndGrading from './Pages/StudentInfoGrading/index';
 
+import Login from './Pages/Auth/login';
+import PrivateRoute from './Routes/PrivateRoute';
+
 
 
 function App() {
   return (
     <>
 
-      <Navbar />
+
+      <Switch>
+        <Route exact path='/' component={Login} />
+
+        <PrivateRoute >
+          <Navbar />
+          <main>
+            {/* <Switch> */}
 
 
-      <main>
-        <Switch>
-          
-          
-          <Route exact path="/dashboard" component={Dashboard} />
-          <Route exact path="/studying-students" component={StudyingStudents} />
-          <Route exact path="/graduate-students" component={GraduateStudents} />
-          <Route exact path="/academic-calender" component={AcademicCalendar} />
-          <Route exact path="/studying-students/:id" component={StudentInfoAndGrading} />
+              <Route exact path="/dashboard" component={Dashboard} />
+              <Route exact path="/studying-students" component={StudyingStudents} />
+              <Route exact path="/graduate-students" component={GraduateStudents} />
+              <Route exact path="/academic-calender" component={AcademicCalendar} />
+              <Route exact path="/studying-students/:id" component={StudentInfoAndGrading} />
 
-          <Redirect exact from="/" to="/dashboard"  component={Dashboard}/>
-        </Switch>
-      </main>
+              {/* <Redirect exact from="/" to="/dashboard" component={Dashboard} /> */}
+            {/* </Switch> */}
+          </main>
+        </PrivateRoute>
+
+
+      </Switch>
+
+      
 
 
     </>
