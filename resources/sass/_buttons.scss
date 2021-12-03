@@ -1,0 +1,12 @@
+.button-logout {
+    &,
+    &:hover {
+        min-width: 94px !important;
+        height: 34px !important;
+        background: #eeeefb !important;
+        border-radius: 4px !important;
+        box-shadow: none !important;
+        color: #595991 !important;
+        border: 0 !important;
+    }
+}

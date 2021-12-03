@@ -1,0 +1,24 @@
+// antd select language
+.select-option-language {
+    height: 39px !important;
+    width: 100px !important;
+    color: #04041c !important;
+
+    .ant-select-selector,
+    .ant-select-selector:hover,
+    .ant-select-selector:active {
+        padding-top: 4px !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        border: 0 !important;
+        border-radius: 4px !important;
+        height: 39px !important;
+        font-size: 14px !important;
+    }
+    .ant-select-selection-item {
+        font-weight: 400 !important;
+    }
+    .ant-select-arrow {
+        right: 20px !important;
+    }
+}
