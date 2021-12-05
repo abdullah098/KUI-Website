@@ -53934,6 +53934,16 @@ var map = {
 		9,
 		"resources_js_Pages_Dashboard_Index_jsx"
 	],
+	"./GraduateStudents/Details": [
+		"./resources/js/Pages/GraduateStudents/Details.jsx",
+		9,
+		"resources_js_Pages_GraduateStudents_Details_jsx"
+	],
+	"./GraduateStudents/Details.jsx": [
+		"./resources/js/Pages/GraduateStudents/Details.jsx",
+		9,
+		"resources_js_Pages_GraduateStudents_Details_jsx"
+	],
 	"./GraduateStudents/Index": [
 		"./resources/js/Pages/GraduateStudents/Index.jsx",
 		9,
@@ -53943,6 +53953,16 @@ var map = {
 		"./resources/js/Pages/GraduateStudents/Index.jsx",
 		9,
 		"resources_js_Pages_GraduateStudents_Index_jsx"
+	],
+	"./StudyingStudents/Details": [
+		"./resources/js/Pages/StudyingStudents/Details.jsx",
+		9,
+		"resources_js_Pages_StudyingStudents_Details_jsx"
+	],
+	"./StudyingStudents/Details.jsx": [
+		"./resources/js/Pages/StudyingStudents/Details.jsx",
+		9,
+		"resources_js_Pages_StudyingStudents_Details_jsx"
 	],
 	"./StudyingStudents/Index": [
 		"./resources/js/Pages/StudyingStudents/Index.jsx",
@@ -54138,7 +54158,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Pages_Auth_Login_jsx":1,"resources_js_Pages_Dashboard_Index_jsx":1,"resources_js_Pages_GraduateStudents_Index_jsx":1,"resources_js_Pages_StudyingStudents_Index_jsx":1,"resources_js_Pages_test":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_Auth_Login_jsx":1,"resources_js_Pages_Dashboard_Index_jsx":1,"resources_js_Pages_GraduateStudents_Details_jsx":1,"resources_js_Pages_GraduateStudents_Index_jsx":1,"resources_js_Pages_StudyingStudents_Details_jsx":1,"resources_js_Pages_StudyingStudents_Index_jsx":1,"resources_js_Pages_test":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

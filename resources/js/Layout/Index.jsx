@@ -10,7 +10,7 @@ import { InertiaLink } from "@inertiajs/inertia-react";
 import clsx from "clsx";
 import useNavBarScrollAnimate from "./../Hooks/useNavBarScrollAnimate";
 
-function Sidebar({ children, title, currentPage }) {
+function Index({ children, title, currentPage }) {
     // custom hook for navbar scroll animation
     const { showBG } = useNavBarScrollAnimate();
 
@@ -26,13 +26,13 @@ function Sidebar({ children, title, currentPage }) {
             name: "Graduate Students",
             image: GraduateIcon,
             url: "/graduate-students",
-            key: 0,
+            key: 1,
         },
         {
             name: "Academic Students",
             image: AcademicIcon,
             url: "/academic-students",
-            key: 0,
+            key: 2,
         },
         { name: "Mail Box", image: EmailIcon, url: "/mail-box", key: 0 },
     ];
@@ -90,4 +90,4 @@ function Sidebar({ children, title, currentPage }) {
     );
 }
 
-export default Sidebar;
+export default Index;

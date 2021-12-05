@@ -1,5 +1,6 @@
 body {
     font-family: "poppins", san-serif !important;
+    background-color: #f8f8f8 !important;
 }
 
 .f-9 {
@@ -66,11 +67,36 @@ body {
 //                          Margins/Paddings
 // =========================================================
 
+.mb-5-px {
+    margin-bottom: 5px !important;
+}
+.mb-7 {
+    margin-bottom: 7px !important;
+}
+.mr-8 {
+    margin-right: 8px !important;
+}
 .mr-9 {
     margin-right: 9px !important;
 }
+
+.ml-10 {
+    margin-left: 10px !important;
+}
+.mr-14 {
+    margin-right: 14px !important;
+}
 .mb-20 {
     margin-bottom: 20px !important;
+}
+.mr-20 {
+    margin-right: 20px !important;
+}
+.ml-30 {
+    margin-left: 30px !important;
+}
+.mb-30 {
+    margin-bottom: 30px !important;
 }
 
 // =========================================================
@@ -103,4 +129,10 @@ body {
 }
 .color-secondary {
     color: #343379 !important;
+}
+.color-persian-blue {
+    color: #2422b4 !important;
+}
+.color-abbey {
+    color: #4f4f58 !important;
 }

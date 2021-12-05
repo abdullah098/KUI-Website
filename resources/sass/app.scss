@@ -14,9 +14,12 @@
 @import "defaults";
 @import "buttons";
 @import "layout";
+@import "utilities";
 
 
 // // PAGES
+@import "Pages/students";
+@import "Pages/studentResultCard";
 
 // // responsivness 
 @import "responsive";

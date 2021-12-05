@@ -2,3 +2,40 @@
 html {
     --antd-wave-shadow-color: #089752 !important;
 }
+
+.primary-search {
+    &,
+    &:hover {
+        width: 237px !important;
+        height: 34px !important;
+        background: #ffffff !important;
+        border: 1px solid #d6d6d6 !important;
+        border-radius: 4px !important;
+        box-shadow: none !important;
+    }
+    input {
+        padding-left: 7px !important;
+    }
+}
+
+.export-dropdown-menu {
+    .ant-dropdown-menu-item,
+    .ant-dropdown-menu-submenu-title {
+        padding: 3px 12px !important;
+        color: #000 !important;
+    }
+    li span {
+        font-size: 12px !important;
+    }
+}
+
+.select-primary {
+    .ant-select-selector {
+        min-width: 156px !important;
+        height: 34px !important;
+        background: #ffffff !important;
+        border: 1px solid #cbcbcb !important;
+        border-radius: 4px !important;
+        box-shadow: none !important;
+    }
+}

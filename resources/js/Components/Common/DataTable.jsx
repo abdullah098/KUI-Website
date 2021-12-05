@@ -1,5 +1,6 @@
 import DataTableComponent from "react-data-table-component";
 import { PropTypes } from "prop-types";
+import React from "react";
 
 // render data table with custom functionality - it uses react data table component package
 const DataTable = ({
@@ -57,7 +58,9 @@ const DataTable = ({
             <DataTableComponent
                 columns={columns}
                 data={data}
-                pagination={pagination}
+                pagination={
+                    data.length > paginationPerPage ? pagination : false
+                }
                 paginationPerPage={paginationPerPage}
                 customStyles={customStyles}
                 keyField={keyField}
@@ -76,7 +79,7 @@ DataTable.defaultProps = {
     columns: [],
     apiEndPoint: "",
     pagination: true,
-    paginationPerPage: 5,
+    paginationPerPage: 9,
     paginationRowsPerPageOptions: [5, 10, 15, 20],
 };
 

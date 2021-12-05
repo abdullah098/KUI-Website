@@ -23,6 +23,9 @@ Route::get('dashboard', function () {
 Route::get('studying-students', function () {
     return Inertia::render('StudyingStudents/Index');
 });
+Route::get('studying-students/{id}', function () {
+    return Inertia::render('StudyingStudents/Details');
+});
 Route::get('graduate-students', function () {
     return Inertia::render('GraduateStudents/Index');
 });

@@ -22,3 +22,30 @@
         right: 20px !important;
     }
 }
+
+.primary-card {
+    width: 100%;
+    min-height: 606px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px #cecece29;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+.primary-table-header {
+    padding: 15px 24px 13px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+        font-size: 14px !important;
+        font-weight: 500;
+    }
+}
+.primary-table {
+    .hCBnvI {
+        border-top: 1px solid #e0e0e0;
+    }
+    .lnndaO {
+        font-size: 14px;
+    }
+}

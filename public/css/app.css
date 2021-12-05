@@ -11288,6 +11288,7 @@ a {
 
 body {
   font-family: "poppins", san-serif !important;
+  background-color: #f8f8f8 !important;
 }
 
 .f-9 {
@@ -11350,12 +11351,44 @@ body {
   font-weight: 800 !important;
 }
 
+.mb-5-px {
+  margin-bottom: 5px !important;
+}
+
+.mb-7 {
+  margin-bottom: 7px !important;
+}
+
+.mr-8 {
+  margin-right: 8px !important;
+}
+
 .mr-9 {
   margin-right: 9px !important;
 }
 
+.ml-10 {
+  margin-left: 10px !important;
+}
+
+.mr-14 {
+  margin-right: 14px !important;
+}
+
 .mb-20 {
   margin-bottom: 20px !important;
+}
+
+.mr-20 {
+  margin-right: 20px !important;
+}
+
+.ml-30 {
+  margin-left: 30px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
 }
 
 .color-danger {
@@ -11394,8 +11427,46 @@ body {
   color: #343379 !important;
 }
 
+.color-persian-blue {
+  color: #2422b4 !important;
+}
+
+.color-abbey {
+  color: #4f4f58 !important;
+}
+
 html {
   --antd-wave-shadow-color: #089752 !important;
+}
+
+.primary-search, .primary-search:hover {
+  width: 237px !important;
+  height: 34px !important;
+  background: #ffffff !important;
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+.primary-search input {
+  padding-left: 7px !important;
+}
+
+.export-dropdown-menu .ant-dropdown-menu-item,
+.export-dropdown-menu .ant-dropdown-menu-submenu-title {
+  padding: 3px 12px !important;
+  color: #000 !important;
+}
+.export-dropdown-menu li span {
+  font-size: 12px !important;
+}
+
+.select-primary .ant-select-selector {
+  min-width: 156px !important;
+  height: 34px !important;
+  background: #ffffff !important;
+  border: 1px solid #cbcbcb !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
 }
 
 .select-option-language {
@@ -11421,6 +11492,33 @@ html {
   right: 20px !important;
 }
 
+.primary-card {
+  width: 100%;
+  min-height: 606px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px #cecece29;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.primary-table-header {
+  padding: 15px 24px 13px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.primary-table-header h1, .primary-table-header .h1 {
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+.primary-table .hCBnvI {
+  border-top: 1px solid #e0e0e0;
+}
+.primary-table .lnndaO {
+  font-size: 14px;
+}
+
 .button-logout, .button-logout:hover {
   min-width: 94px !important;
   height: 34px !important;
@@ -11429,6 +11527,48 @@ html {
   box-shadow: none !important;
   color: #595991 !important;
   border: 0 !important;
+}
+
+.button-primary, .button-primary:hover {
+  color: #fff !important;
+  border-radius: 4px !important;
+  border-color: #079751f7 !important;
+  background: #079751f7 !important;
+}
+
+.button-default, .button-default:hover {
+  color: #04041c !important;
+  border-radius: 4px !important;
+  border-color: #d4d4d4 !important;
+  box-shadow: none !important;
+}
+.button-default img {
+  margin-bottom: 1px;
+}
+
+.button-default-bordered, .button-default-bordered:hover {
+  color: #2f2f75 !important;
+  border-radius: 4px !important;
+  border-color: #2f2f75 !important;
+  box-shadow: none !important;
+  font-size: 11px !important;
+}
+.button-default-bordered img {
+  margin-bottom: 1px;
+  margin-right: 10px;
+}
+
+.button-filter, .button-filter:hover {
+  min-width: 88px !important;
+  height: 34px !important;
+  background: #f2f2f2 !important;
+  border-radius: 4px 4px 0px 0px !important;
+  border: 0 !important;
+}
+
+.button-back img {
+  margin-right: 14px;
+  margin-bottom: 3px;
 }
 
 .primary-sidebar {
@@ -11482,7 +11622,7 @@ html {
   padding: 22px 26px 22px 249px;
   width: 100%;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #f8f8f8;
   transition: all ease-in 100ms;
   margin-left: 24px;
 }
@@ -11504,7 +11644,272 @@ html {
 main {
   margin-left: 225px;
   margin-top: 100px;
-  padding-left: 24px;
+  padding: 0 24px;
+  background: #f8f8f8;
+}
+
+.text-nowrap {
+  white-space: nowrap !important;
+}
+
+.align-middle {
+  vertical-align: middle !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+
+.flex-1 {
+  flex: 1 !important;
+}
+
+.w-max-content {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.academic-details-wrapper__header {
+  width: 100%;
+  min-height: 173px;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  padding: 17px 30px;
+  margin: 15px 0;
+}
+.academic-details-wrapper__header .vertical-divider {
+  height: 42px;
+  width: 1px;
+  background: #e4e4e4;
+  margin: 0 25px;
+}
+.academic-details-wrapper__content {
+  width: 100%;
+  min-height: 367px;
+  background: #ffffff;
+  box-shadow: 0px 3px 15px #85858529;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  padding: 17px 30px;
+}
+.academic-details-wrapper__content .ant-table-thead > tr > th {
+  background-color: #fff !important;
+}
+.academic-details-wrapper__content .ant-table-thead > tr > th:before {
+  background-color: transparent !important;
+}
+.academic-details-wrapper .ant-primary-tabs .ant-tabs-nav-list {
+  width: 100%;
+}
+.academic-details-wrapper .academic-record-page-card {
+  padding: 32px 26px 32px 0 !important;
+}
+.academic-details-wrapper .course-record-wrapper .primary-table-wrapper {
+  min-height: 516px !important;
+}
+.academic-details-wrapper .course-record-wrapper .primary-search {
+  width: 252px !important;
+}
+
+.result-card-heading {
+  color: var(--text-color);
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  color: #15152e;
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+
+.student-result-card-wrapper {
+  height: 141px !important;
+  width: 100%;
+  margin-top: 21px;
+  background: #ffffff;
+  box-shadow: 0px 3px 15px #85858529;
+  border-radius: 4px;
+  padding-left: 0;
+  padding-top: 22px;
+  padding-right: 0;
+  padding-bottom: 14px;
+  margin-bottom: 40px;
+}
+
+.result-card-qualifation {
+  text-align: left;
+  font-size: 12px;
+  color: #15152e;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.result-card-college {
+  color: var(--text-color);
+  text-align: left;
+  font-size: 11px;
+  font-weight: 500;
+  color: #15152e;
+  margin: 0 !important;
+}
+
+.result-card-college-major {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 500;
+  color: #15152e;
+  margin: 0 !important;
+  margin-left: 65px;
+}
+
+.result-card-department {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 500;
+  color: #15152e;
+}
+
+.result-card-college-education {
+  text-align: left;
+  font-size: 11px;
+  color: #15152e;
+  font-weight: 500;
+}
+
+.wrapper-table-heading {
+  text-align: left;
+  font-size: 16px;
+  color: #15152e;
+  font-weight: 500;
+  margin-bottom: 34px;
+  padding-left: 26px;
+  white-space: nowrap;
+}
+
+.wrapper-table-grade {
+  text-align: left;
+  font-size: 11px;
+  color: #15152e;
+  font-weight: 500;
+  margin-top: 9px;
+  margin-bottom: 0px;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 6px 0 6px 26px;
+}
+
+.wrapper-table-points {
+  text-align: left;
+  font-size: 11px;
+  color: #15152e;
+  font-weight: 500;
+  padding-left: 26px;
+  margin-top: 7px;
+}
+
+.content-right {
+  margin-top: 6px;
+  text-align: center;
+}
+
+.grade-color {
+  width: 34px;
+  height: 13px;
+  border-radius: 4px;
+  margin-bottom: 0px;
+}
+
+.grade {
+  font-size: 14px bold;
+  color: #15152e;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+.marks {
+  font-size: 11px;
+  color: #262626;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+  padding: 6px 0;
+}
+
+.points {
+  font-size: 11px;
+  color: #262626;
+  margin: 0;
+  margin-top: 7px !important;
+}
+
+.result-card-show {
+  text-align: left;
+  font-size: 14px;
+  color: #262626;
+  margin-bottom: 0px;
+}
+
+.print-btn {
+  width: 77px;
+  height: 39px;
+  background: #ffffff;
+  border: 1px solid #343379;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 11px;
+  color: #343379;
+  padding: 10px;
+}
+
+.export-btn {
+  margin-left: 15px;
+  width: 125px;
+  height: 39px;
+  background: #ffffff;
+  border: 1px solid #343379;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: left;
+  font-size: 11px;
+  color: #343379;
+}
+
+.buttons-wrapper {
+  margin-top: 18px;
+}
+
+.question-dropdown {
+  background: #ffffff;
+  border: 1px solid #cbcbcb;
+  border-radius: 4px;
+  width: 156px;
+  height: 34px;
+}
+
+.drop-icon {
+  width: 10px;
+  height: 5px;
+  background: #000000;
+  opacity: 1;
+}
+
+.semester-card,
+.report-card {
+  width: 100%;
+  min-height: 367px;
+  background: #ffffff;
+  box-shadow: 0px 3px 15px #85858529;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding-top: 16px;
 }
 
 
