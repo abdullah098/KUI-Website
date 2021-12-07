@@ -29,3 +29,24 @@ Route::get('studying-students/{id}', function () {
 Route::get('graduate-students', function () {
     return Inertia::render('GraduateStudents/Index');
 });
+Route::get('graduate-students/{id}', function () {
+    return Inertia::render('GraduateStudents/Details');
+});
+Route::get('mail/inbox', function () {
+    return Inertia::render('MailBox/Inbox');
+});
+Route::get('mail/inbox/{id}', function () {
+    return Inertia::render('MailBox/InboxDetails');
+});
+Route::get('mail/sent', function () {
+    return Inertia::render('MailBox/Sent');
+});
+Route::get('mail/sent/{id}', function () {
+    return Inertia::render('MailBox/SentDetails');
+});
+Route::get('mail/draft', function () {
+    return Inertia::render('MailBox/Draft');
+});
+Route::get('mail/trash', function () {
+    return Inertia::render('MailBox/Trash');
+});

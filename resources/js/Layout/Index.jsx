@@ -34,7 +34,7 @@ function Index({ children, title, currentPage }) {
             url: "/academic-students",
             key: 2,
         },
-        { name: "Mail Box", image: EmailIcon, url: "/mail-box", key: 0 },
+        { name: "Mail Box", image: EmailIcon, url: "/mail/inbox", key: 3 },
     ];
 
     return (

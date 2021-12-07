@@ -18,6 +18,15 @@
         border-radius: 4px !important;
         border-color: #079751f7 !important;
         background: #079751f7 !important;
+        box-shadow: none !important;
+    }
+}
+
+.button-gradient {
+    &,
+    &:hover {
+        background: transparent
+            linear-gradient(270deg, #079751f7 0%, #343379 100%) !important;
     }
 }
 

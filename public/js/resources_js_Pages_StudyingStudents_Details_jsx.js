@@ -12831,10 +12831,10 @@ function renderSwitcherIcon(prefixCls, switcherIcon, showLine, _ref) {
 
 /***/ }),
 
-/***/ "./resources/js/Components/ResultCards/AcademicReportCard.jsx":
-/*!********************************************************************!*\
-  !*** ./resources/js/Components/ResultCards/AcademicReportCard.jsx ***!
-  \********************************************************************/
+/***/ "./resources/js/Components/Students/AcademicReportCard.jsx":
+/*!*****************************************************************!*\
+  !*** ./resources/js/Components/Students/AcademicReportCard.jsx ***!
+  \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -12999,10 +12999,80 @@ function AcademicReportCard(props) {
 
 /***/ }),
 
-/***/ "./resources/js/Components/ResultCards/ResultCardContent.jsx":
-/*!*******************************************************************!*\
-  !*** ./resources/js/Components/ResultCards/ResultCardContent.jsx ***!
-  \*******************************************************************/
+/***/ "./resources/js/Components/Students/DetailsHeader.jsx":
+/*!************************************************************!*\
+  !*** ./resources/js/Components/Students/DetailsHeader.jsx ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/divider/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+
+var DetailsHeader = function DetailsHeader() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "academic-details-wrapper__header"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "d-flex align-items-center justify-content-between"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "f-10 mb-0"
+  }, "demo@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
+    className: "f-14 fw-600 mb-1"
+  }, "Student John Doe")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "d-flex justify-content-between align-items-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "f-12 color-abbey mb-5-px"
+  }, "Scholarship"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
+    className: "f-14 fw-500"
+  }, "Sibling Concession")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "vertical-divider"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "f-12 color-abbey mb-5-px"
+  }, "Semester"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
+    className: "f-14 fw-500"
+  }, "1st")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "vertical-divider"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "f-12 color-abbey mb-5-px"
+  }, "CGPA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
+    className: "f-14 fw-500"
+  }, "3.53")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "vertical-divider"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "color-black-pearl mb-0"
+  }, "ID-123"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "primary-divider"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "d-flex justify-content-between"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "mb-0 f-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    className: "fw-500"
+  }, "College: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "College of Religion and Quranic Studies")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "mb-0 f-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    className: "fw-500"
+  }, "Department: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Quranic Studies")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "mb-0 f-12"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    className: "fw-500"
+  }, "Major: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Tafseer"))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DetailsHeader);
+
+/***/ }),
+
+/***/ "./resources/js/Components/Students/ResultCardContent.jsx":
+/*!****************************************************************!*\
+  !*** ./resources/js/Components/Students/ResultCardContent.jsx ***!
+  \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -13011,8 +13081,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _SemesterCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SemesterCard */ "./resources/js/Components/ResultCards/SemesterCard.jsx");
-/* harmony import */ var _AcademicReportCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AcademicReportCard */ "./resources/js/Components/ResultCards/AcademicReportCard.jsx");
+/* harmony import */ var _SemesterCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SemesterCard */ "./resources/js/Components/Students/SemesterCard.jsx");
+/* harmony import */ var _AcademicReportCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AcademicReportCard */ "./resources/js/Components/Students/AcademicReportCard.jsx");
 /* harmony import */ var _Assets_icons_pdf_export_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Assets/icons/pdf-export.svg */ "./resources/js/Assets/icons/pdf-export.svg");
 /* harmony import */ var _Assets_icons_drop_down_icon_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Assets/icons/drop-down-icon.svg */ "./resources/js/Assets/icons/drop-down-icon.svg");
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/select/index.js");
@@ -13160,10 +13230,10 @@ function ResultCardContent(props) {
 
 /***/ }),
 
-/***/ "./resources/js/Components/ResultCards/SemesterCard.jsx":
-/*!**************************************************************!*\
-  !*** ./resources/js/Components/ResultCards/SemesterCard.jsx ***!
-  \**************************************************************/
+/***/ "./resources/js/Components/Students/SemesterCard.jsx":
+/*!***********************************************************!*\
+  !*** ./resources/js/Components/Students/SemesterCard.jsx ***!
+  \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -13382,8 +13452,8 @@ function Index(_ref) {
   }, {
     name: "Mail Box",
     image: _assets_icons_email_png__WEBPACK_IMPORTED_MODULE_7__["default"],
-    url: "/mail-box",
-    key: 0
+    url: "/mail/inbox",
+    key: 3
   }];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", {
     className: "primary-sidebar"
@@ -13482,10 +13552,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _Layout_Index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Layout/Index */ "./resources/js/Layout/Index.jsx");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/divider/index.js");
-/* harmony import */ var _Components_ResultCards_ResultCardContent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../Components/ResultCards/ResultCardContent */ "./resources/js/Components/ResultCards/ResultCardContent.jsx");
+/* harmony import */ var _Components_Students_ResultCardContent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Components/Students/ResultCardContent */ "./resources/js/Components/Students/ResultCardContent.jsx");
 /* harmony import */ var _Assets_icons_button_arrow_back_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Assets/icons/button-arrow-back.svg */ "./resources/js/Assets/icons/button-arrow-back.svg");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Components_Students_DetailsHeader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Components/Students/DetailsHeader */ "./resources/js/Components/Students/DetailsHeader.jsx");
 
 
 
@@ -13493,7 +13563,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Details = function Details() {
+var Details = function Details(_ref) {
+  var data = _ref.data;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Layout_Index__WEBPACK_IMPORTED_MODULE_1__["default"], {
     currentPage: 1
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__.InertiaLink, {
@@ -13505,53 +13576,7 @@ var Details = function Details() {
     className: "f-18 fw-600 color-secondary"
   }, "Back")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "academic-details-wrapper"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "academic-details-wrapper__header"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "d-flex align-items-center justify-content-between"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: "f-10 mb-0"
-  }, "demo@gmail.com"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    className: "f-14 fw-600 mb-1"
-  }, "Student John Doe")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "d-flex justify-content-between align-items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: "f-12 color-abbey mb-5-px"
-  }, "Scholarship"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    className: "f-14 fw-500"
-  }, "Sibling Concession")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "vertical-divider"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: "f-12 color-abbey mb-5-px"
-  }, "Semester"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    className: "f-14 fw-500"
-  }, "1st")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "vertical-divider"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: "f-12 color-abbey mb-5-px"
-  }, "CGPA"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    className: "f-14 fw-500"
-  }, "3.53")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "vertical-divider"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: "color-black-pearl mb-0"
-  }, "ID-123"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "primary-divider"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "d-flex justify-content-between"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: "mb-0 f-12"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-    className: "fw-500"
-  }, "College: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "College of Religion and Quranic Studies")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: "mb-0 f-12"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-    className: "fw-500"
-  }, "Department: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Quranic Studies")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: "mb-0 f-12"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-    className: "fw-500"
-  }, "Major: "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Tafseer")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_ResultCards_ResultCardContent__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Students_DetailsHeader__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Students_ResultCardContent__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Details);
@@ -15270,7 +15295,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 
 
-var reactIs = __webpack_require__(/*! react-is */ "./node_modules/hoist-non-react-statics/node_modules/react-is/index.js");
+var reactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 
 /**
  * Copyright 2015, Yahoo! Inc.
@@ -15371,214 +15396,6 @@ function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
 }
 
 module.exports = hoistNonReactStatics;
-
-
-/***/ }),
-
-/***/ "./node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js":
-/*!************************************************************************************************!*\
-  !*** ./node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js ***!
-  \************************************************************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-/** @license React v16.13.1
- * react-is.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-
-
-if (true) {
-  (function() {
-'use strict';
-
-// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-// nor polyfill, then a plain number is used for performance.
-var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
-var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
-var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
-var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
-var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
-var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
-// (unstable) APIs that have been removed. Can we remove the symbols?
-
-var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
-var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
-var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
-var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
-var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
-var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
-var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
-var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
-var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
-var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
-var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
-
-function isValidElementType(type) {
-  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
-}
-
-function typeOf(object) {
-  if (typeof object === 'object' && object !== null) {
-    var $$typeof = object.$$typeof;
-
-    switch ($$typeof) {
-      case REACT_ELEMENT_TYPE:
-        var type = object.type;
-
-        switch (type) {
-          case REACT_ASYNC_MODE_TYPE:
-          case REACT_CONCURRENT_MODE_TYPE:
-          case REACT_FRAGMENT_TYPE:
-          case REACT_PROFILER_TYPE:
-          case REACT_STRICT_MODE_TYPE:
-          case REACT_SUSPENSE_TYPE:
-            return type;
-
-          default:
-            var $$typeofType = type && type.$$typeof;
-
-            switch ($$typeofType) {
-              case REACT_CONTEXT_TYPE:
-              case REACT_FORWARD_REF_TYPE:
-              case REACT_LAZY_TYPE:
-              case REACT_MEMO_TYPE:
-              case REACT_PROVIDER_TYPE:
-                return $$typeofType;
-
-              default:
-                return $$typeof;
-            }
-
-        }
-
-      case REACT_PORTAL_TYPE:
-        return $$typeof;
-    }
-  }
-
-  return undefined;
-} // AsyncMode is deprecated along with isAsyncMode
-
-var AsyncMode = REACT_ASYNC_MODE_TYPE;
-var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
-var ContextConsumer = REACT_CONTEXT_TYPE;
-var ContextProvider = REACT_PROVIDER_TYPE;
-var Element = REACT_ELEMENT_TYPE;
-var ForwardRef = REACT_FORWARD_REF_TYPE;
-var Fragment = REACT_FRAGMENT_TYPE;
-var Lazy = REACT_LAZY_TYPE;
-var Memo = REACT_MEMO_TYPE;
-var Portal = REACT_PORTAL_TYPE;
-var Profiler = REACT_PROFILER_TYPE;
-var StrictMode = REACT_STRICT_MODE_TYPE;
-var Suspense = REACT_SUSPENSE_TYPE;
-var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
-
-function isAsyncMode(object) {
-  {
-    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
-
-      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
-    }
-  }
-
-  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
-}
-function isConcurrentMode(object) {
-  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
-}
-function isContextConsumer(object) {
-  return typeOf(object) === REACT_CONTEXT_TYPE;
-}
-function isContextProvider(object) {
-  return typeOf(object) === REACT_PROVIDER_TYPE;
-}
-function isElement(object) {
-  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-}
-function isForwardRef(object) {
-  return typeOf(object) === REACT_FORWARD_REF_TYPE;
-}
-function isFragment(object) {
-  return typeOf(object) === REACT_FRAGMENT_TYPE;
-}
-function isLazy(object) {
-  return typeOf(object) === REACT_LAZY_TYPE;
-}
-function isMemo(object) {
-  return typeOf(object) === REACT_MEMO_TYPE;
-}
-function isPortal(object) {
-  return typeOf(object) === REACT_PORTAL_TYPE;
-}
-function isProfiler(object) {
-  return typeOf(object) === REACT_PROFILER_TYPE;
-}
-function isStrictMode(object) {
-  return typeOf(object) === REACT_STRICT_MODE_TYPE;
-}
-function isSuspense(object) {
-  return typeOf(object) === REACT_SUSPENSE_TYPE;
-}
-
-exports.AsyncMode = AsyncMode;
-exports.ConcurrentMode = ConcurrentMode;
-exports.ContextConsumer = ContextConsumer;
-exports.ContextProvider = ContextProvider;
-exports.Element = Element;
-exports.ForwardRef = ForwardRef;
-exports.Fragment = Fragment;
-exports.Lazy = Lazy;
-exports.Memo = Memo;
-exports.Portal = Portal;
-exports.Profiler = Profiler;
-exports.StrictMode = StrictMode;
-exports.Suspense = Suspense;
-exports.isAsyncMode = isAsyncMode;
-exports.isConcurrentMode = isConcurrentMode;
-exports.isContextConsumer = isContextConsumer;
-exports.isContextProvider = isContextProvider;
-exports.isElement = isElement;
-exports.isForwardRef = isForwardRef;
-exports.isFragment = isFragment;
-exports.isLazy = isLazy;
-exports.isMemo = isMemo;
-exports.isPortal = isPortal;
-exports.isProfiler = isProfiler;
-exports.isStrictMode = isStrictMode;
-exports.isSuspense = isSuspense;
-exports.isValidElementType = isValidElementType;
-exports.typeOf = typeOf;
-  })();
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/hoist-non-react-statics/node_modules/react-is/index.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/hoist-non-react-statics/node_modules/react-is/index.js ***!
-  \*****************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js");
-}
 
 
 /***/ }),
@@ -37928,7 +37745,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ toArray)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-is */ "./node_modules/rc-util/node_modules/react-is/index.js");
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 
 
 function toArray(children) {
@@ -39531,7 +39348,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "supportRef": () => (/* binding */ supportRef)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-is */ "./node_modules/rc-util/node_modules/react-is/index.js");
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 /* harmony import */ var _hooks_useMemo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hooks/useMemo */ "./node_modules/rc-util/es/hooks/useMemo.js");
 
 
@@ -39647,214 +39464,6 @@ function noteOnce(valid, message) {
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (warningOnce);
 /* eslint-enable */
-
-/***/ }),
-
-/***/ "./node_modules/rc-util/node_modules/react-is/cjs/react-is.development.js":
-/*!********************************************************************************!*\
-  !*** ./node_modules/rc-util/node_modules/react-is/cjs/react-is.development.js ***!
-  \********************************************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-/** @license React v16.13.1
- * react-is.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-
-
-if (true) {
-  (function() {
-'use strict';
-
-// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-// nor polyfill, then a plain number is used for performance.
-var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
-var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
-var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
-var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
-var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
-var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
-// (unstable) APIs that have been removed. Can we remove the symbols?
-
-var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
-var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
-var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
-var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
-var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
-var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
-var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
-var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
-var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
-var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
-var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
-
-function isValidElementType(type) {
-  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
-}
-
-function typeOf(object) {
-  if (typeof object === 'object' && object !== null) {
-    var $$typeof = object.$$typeof;
-
-    switch ($$typeof) {
-      case REACT_ELEMENT_TYPE:
-        var type = object.type;
-
-        switch (type) {
-          case REACT_ASYNC_MODE_TYPE:
-          case REACT_CONCURRENT_MODE_TYPE:
-          case REACT_FRAGMENT_TYPE:
-          case REACT_PROFILER_TYPE:
-          case REACT_STRICT_MODE_TYPE:
-          case REACT_SUSPENSE_TYPE:
-            return type;
-
-          default:
-            var $$typeofType = type && type.$$typeof;
-
-            switch ($$typeofType) {
-              case REACT_CONTEXT_TYPE:
-              case REACT_FORWARD_REF_TYPE:
-              case REACT_LAZY_TYPE:
-              case REACT_MEMO_TYPE:
-              case REACT_PROVIDER_TYPE:
-                return $$typeofType;
-
-              default:
-                return $$typeof;
-            }
-
-        }
-
-      case REACT_PORTAL_TYPE:
-        return $$typeof;
-    }
-  }
-
-  return undefined;
-} // AsyncMode is deprecated along with isAsyncMode
-
-var AsyncMode = REACT_ASYNC_MODE_TYPE;
-var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
-var ContextConsumer = REACT_CONTEXT_TYPE;
-var ContextProvider = REACT_PROVIDER_TYPE;
-var Element = REACT_ELEMENT_TYPE;
-var ForwardRef = REACT_FORWARD_REF_TYPE;
-var Fragment = REACT_FRAGMENT_TYPE;
-var Lazy = REACT_LAZY_TYPE;
-var Memo = REACT_MEMO_TYPE;
-var Portal = REACT_PORTAL_TYPE;
-var Profiler = REACT_PROFILER_TYPE;
-var StrictMode = REACT_STRICT_MODE_TYPE;
-var Suspense = REACT_SUSPENSE_TYPE;
-var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
-
-function isAsyncMode(object) {
-  {
-    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
-
-      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
-    }
-  }
-
-  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
-}
-function isConcurrentMode(object) {
-  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
-}
-function isContextConsumer(object) {
-  return typeOf(object) === REACT_CONTEXT_TYPE;
-}
-function isContextProvider(object) {
-  return typeOf(object) === REACT_PROVIDER_TYPE;
-}
-function isElement(object) {
-  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-}
-function isForwardRef(object) {
-  return typeOf(object) === REACT_FORWARD_REF_TYPE;
-}
-function isFragment(object) {
-  return typeOf(object) === REACT_FRAGMENT_TYPE;
-}
-function isLazy(object) {
-  return typeOf(object) === REACT_LAZY_TYPE;
-}
-function isMemo(object) {
-  return typeOf(object) === REACT_MEMO_TYPE;
-}
-function isPortal(object) {
-  return typeOf(object) === REACT_PORTAL_TYPE;
-}
-function isProfiler(object) {
-  return typeOf(object) === REACT_PROFILER_TYPE;
-}
-function isStrictMode(object) {
-  return typeOf(object) === REACT_STRICT_MODE_TYPE;
-}
-function isSuspense(object) {
-  return typeOf(object) === REACT_SUSPENSE_TYPE;
-}
-
-exports.AsyncMode = AsyncMode;
-exports.ConcurrentMode = ConcurrentMode;
-exports.ContextConsumer = ContextConsumer;
-exports.ContextProvider = ContextProvider;
-exports.Element = Element;
-exports.ForwardRef = ForwardRef;
-exports.Fragment = Fragment;
-exports.Lazy = Lazy;
-exports.Memo = Memo;
-exports.Portal = Portal;
-exports.Profiler = Profiler;
-exports.StrictMode = StrictMode;
-exports.Suspense = Suspense;
-exports.isAsyncMode = isAsyncMode;
-exports.isConcurrentMode = isConcurrentMode;
-exports.isContextConsumer = isContextConsumer;
-exports.isContextProvider = isContextProvider;
-exports.isElement = isElement;
-exports.isForwardRef = isForwardRef;
-exports.isFragment = isFragment;
-exports.isLazy = isLazy;
-exports.isMemo = isMemo;
-exports.isPortal = isPortal;
-exports.isProfiler = isProfiler;
-exports.isStrictMode = isStrictMode;
-exports.isSuspense = isSuspense;
-exports.isValidElementType = isValidElementType;
-exports.typeOf = typeOf;
-  })();
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/rc-util/node_modules/react-is/index.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/rc-util/node_modules/react-is/index.js ***!
-  \*************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/rc-util/node_modules/react-is/cjs/react-is.development.js");
-}
-
 
 /***/ }),
 
@@ -41736,7 +41345,7 @@ PERFORMANCE OF THIS SOFTWARE.
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
-/** @license React v17.0.2
+/** @license React v16.13.1
  * react-is.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -41747,81 +41356,39 @@ PERFORMANCE OF THIS SOFTWARE.
 
 
 
+
+
 if (true) {
   (function() {
 'use strict';
 
-// ATTENTION
-// When adding new symbols to this file,
-// Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
 // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
 // nor polyfill, then a plain number is used for performance.
-var REACT_ELEMENT_TYPE = 0xeac7;
-var REACT_PORTAL_TYPE = 0xeaca;
-var REACT_FRAGMENT_TYPE = 0xeacb;
-var REACT_STRICT_MODE_TYPE = 0xeacc;
-var REACT_PROFILER_TYPE = 0xead2;
-var REACT_PROVIDER_TYPE = 0xeacd;
-var REACT_CONTEXT_TYPE = 0xeace;
-var REACT_FORWARD_REF_TYPE = 0xead0;
-var REACT_SUSPENSE_TYPE = 0xead1;
-var REACT_SUSPENSE_LIST_TYPE = 0xead8;
-var REACT_MEMO_TYPE = 0xead3;
-var REACT_LAZY_TYPE = 0xead4;
-var REACT_BLOCK_TYPE = 0xead9;
-var REACT_SERVER_BLOCK_TYPE = 0xeada;
-var REACT_FUNDAMENTAL_TYPE = 0xead5;
-var REACT_SCOPE_TYPE = 0xead7;
-var REACT_OPAQUE_ID_TYPE = 0xeae0;
-var REACT_DEBUG_TRACING_MODE_TYPE = 0xeae1;
-var REACT_OFFSCREEN_TYPE = 0xeae2;
-var REACT_LEGACY_HIDDEN_TYPE = 0xeae3;
+var hasSymbol = typeof Symbol === 'function' && Symbol.for;
+var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
+var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
+var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
+var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
+var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
+var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
+var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+// (unstable) APIs that have been removed. Can we remove the symbols?
 
-if (typeof Symbol === 'function' && Symbol.for) {
-  var symbolFor = Symbol.for;
-  REACT_ELEMENT_TYPE = symbolFor('react.element');
-  REACT_PORTAL_TYPE = symbolFor('react.portal');
-  REACT_FRAGMENT_TYPE = symbolFor('react.fragment');
-  REACT_STRICT_MODE_TYPE = symbolFor('react.strict_mode');
-  REACT_PROFILER_TYPE = symbolFor('react.profiler');
-  REACT_PROVIDER_TYPE = symbolFor('react.provider');
-  REACT_CONTEXT_TYPE = symbolFor('react.context');
-  REACT_FORWARD_REF_TYPE = symbolFor('react.forward_ref');
-  REACT_SUSPENSE_TYPE = symbolFor('react.suspense');
-  REACT_SUSPENSE_LIST_TYPE = symbolFor('react.suspense_list');
-  REACT_MEMO_TYPE = symbolFor('react.memo');
-  REACT_LAZY_TYPE = symbolFor('react.lazy');
-  REACT_BLOCK_TYPE = symbolFor('react.block');
-  REACT_SERVER_BLOCK_TYPE = symbolFor('react.server.block');
-  REACT_FUNDAMENTAL_TYPE = symbolFor('react.fundamental');
-  REACT_SCOPE_TYPE = symbolFor('react.scope');
-  REACT_OPAQUE_ID_TYPE = symbolFor('react.opaque.id');
-  REACT_DEBUG_TRACING_MODE_TYPE = symbolFor('react.debug_trace_mode');
-  REACT_OFFSCREEN_TYPE = symbolFor('react.offscreen');
-  REACT_LEGACY_HIDDEN_TYPE = symbolFor('react.legacy_hidden');
-}
-
-// Filter certain DOM attributes (e.g. src, href) if their values are empty strings.
-
-var enableScopeAPI = false; // Experimental Create Event Handle API.
+var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
+var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
+var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
+var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
+var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
+var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
+var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
+var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
 
 function isValidElementType(type) {
-  if (typeof type === 'string' || typeof type === 'function') {
-    return true;
-  } // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
-
-
-  if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_DEBUG_TRACING_MODE_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || type === REACT_LEGACY_HIDDEN_TYPE || enableScopeAPI ) {
-    return true;
-  }
-
-  if (typeof type === 'object' && type !== null) {
-    if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_BLOCK_TYPE || type[0] === REACT_SERVER_BLOCK_TYPE) {
-      return true;
-    }
-  }
-
-  return false;
+  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
 }
 
 function typeOf(object) {
@@ -41833,11 +41400,12 @@ function typeOf(object) {
         var type = object.type;
 
         switch (type) {
+          case REACT_ASYNC_MODE_TYPE:
+          case REACT_CONCURRENT_MODE_TYPE:
           case REACT_FRAGMENT_TYPE:
           case REACT_PROFILER_TYPE:
           case REACT_STRICT_MODE_TYPE:
           case REACT_SUSPENSE_TYPE:
-          case REACT_SUSPENSE_LIST_TYPE:
             return type;
 
           default:
@@ -41863,7 +41431,10 @@ function typeOf(object) {
   }
 
   return undefined;
-}
+} // AsyncMode is deprecated along with isAsyncMode
+
+var AsyncMode = REACT_ASYNC_MODE_TYPE;
+var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
 var ContextConsumer = REACT_CONTEXT_TYPE;
 var ContextProvider = REACT_PROVIDER_TYPE;
 var Element = REACT_ELEMENT_TYPE;
@@ -41875,30 +41446,21 @@ var Portal = REACT_PORTAL_TYPE;
 var Profiler = REACT_PROFILER_TYPE;
 var StrictMode = REACT_STRICT_MODE_TYPE;
 var Suspense = REACT_SUSPENSE_TYPE;
-var hasWarnedAboutDeprecatedIsAsyncMode = false;
-var hasWarnedAboutDeprecatedIsConcurrentMode = false; // AsyncMode should be deprecated
+var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
 
 function isAsyncMode(object) {
   {
     if (!hasWarnedAboutDeprecatedIsAsyncMode) {
       hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
 
-      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 18+.');
+      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
     }
   }
 
-  return false;
+  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
 }
 function isConcurrentMode(object) {
-  {
-    if (!hasWarnedAboutDeprecatedIsConcurrentMode) {
-      hasWarnedAboutDeprecatedIsConcurrentMode = true; // Using console['warn'] to evade Babel and ESLint
-
-      console['warn']('The ReactIs.isConcurrentMode() alias has been deprecated, ' + 'and will be removed in React 18+.');
-    }
-  }
-
-  return false;
+  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
 }
 function isContextConsumer(object) {
   return typeOf(object) === REACT_CONTEXT_TYPE;
@@ -41934,6 +41496,8 @@ function isSuspense(object) {
   return typeOf(object) === REACT_SUSPENSE_TYPE;
 }
 
+exports.AsyncMode = AsyncMode;
+exports.ConcurrentMode = ConcurrentMode;
 exports.ContextConsumer = ContextConsumer;
 exports.ContextProvider = ContextProvider;
 exports.Element = Element;
