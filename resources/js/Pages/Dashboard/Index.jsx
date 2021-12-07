@@ -1,10 +1,33 @@
 import React from "react";
 import Layout from "../../layout/Index";
+import Statistics from "./../../Components/Dashboard/Statistics";
+import AmountGraph from "./../../Components/Dashboard/AmountGraph";
+import RevenueBarChart from "../../Components/Dashboard/RevenueBarChart";
+import ScholarshipsProgramTable from "./../../Components/Dashboard/ScholarshipsProgramTable";
+import CollegesBarChart from "./../../Components/Dashboard/CollegesBarChart";
+import GenderAreaChart from "./../../Components/Dashboard/GenderAreaChart";
 
 const Index = () => {
     return (
         <Layout currentPage={0}>
-            <h1 className="f-14 fw-600 mb-20">Dashboard</h1>
+            <div className="dashboard-wrapper">
+                <div className="row">
+                    <div className="col-8">
+                        <Statistics />
+
+                        <AmountGraph />
+
+                        <RevenueBarChart />
+                    </div>
+                    <div className="col-4">
+                        <ScholarshipsProgramTable />
+
+                        <CollegesBarChart />
+
+                        <GenderAreaChart />
+                    </div>
+                </div>
+            </div>
         </Layout>
     );
 };

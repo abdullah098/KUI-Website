@@ -11383,6 +11383,10 @@ body {
   margin-right: 16px !important;
 }
 
+.mb-18 {
+  margin-bottom: 18px !important;
+}
+
 .mb-20 {
   margin-bottom: 20px !important;
 }
@@ -11391,12 +11395,20 @@ body {
   margin-right: 20px !important;
 }
 
+.mb-24 {
+  margin-bottom: 24px !important;
+}
+
 .ml-30 {
   margin-left: 30px !important;
 }
 
 .mb-30 {
   margin-bottom: 30px !important;
+}
+
+.mr-30 {
+  margin-right: 30px !important;
 }
 
 .color-danger {
@@ -11421,6 +11433,10 @@ body {
 
 .color-gray {
   color: #8e8e8e !important;
+}
+
+.color-mid-gray {
+  color: #686874 !important;
 }
 
 .color-jumbo {
@@ -11551,6 +11567,26 @@ html {
   vertical-align: 0rem !important;
 }
 
+* {
+  scrollbar-color: #dbdbdb transparent;
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb {
+  background-color: #dbdbdb;
+}
+
 .select-option-language {
   height: 39px !important;
   width: 100px !important;
@@ -11581,6 +11617,15 @@ html {
   box-shadow: 0px 0px 20px #cecece29;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
+}
+
+.primary-card-rounded {
+  width: 100%;
+  min-height: 123px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px #e3e3e3;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
 }
 
 .primary-table-header {
@@ -12898,6 +12943,97 @@ main {
 
 .container-compose .compose-content-to .multiple-last-child-styling .ant-select-selection-overflow-item:nth-last-child(2) .ant-select-selection-item {
   font-size: 12px !important;
+}
+
+.dashboard-wrapper .statistics-wrapper .primary-card-rounded {
+  padding: 14px 24px;
+}
+.dashboard-wrapper .vertical-divider {
+  width: 0px;
+  height: 59px;
+  border: 1px solid #ebebeb;
+}
+.dashboard-wrapper .amount-graph-wrapper .primary-card-rounded {
+  padding: 14px 24px;
+  height: 391px !important;
+  padding: 20px;
+}
+
+.area-chart-header {
+  display: flex;
+}
+.area-chart-header .chart-legend .indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+.area-chart-header .chart-legend .primary-indicator {
+  background: #089752;
+}
+.area-chart-header .chart-legend .secondary-indicator {
+  background: #343379;
+}
+
+.revenue-bar-chart-wrapper .primary-card-rounded {
+  padding: 20px 30px;
+  height: 528px !important;
+  padding: 20px;
+}
+
+.bar-chart-header {
+  display: flex;
+}
+
+.scholarships-wrapper .primary-card-rounded {
+  height: 219px !important;
+}
+.scholarships-wrapper .table-header {
+  height: 52px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-bottom: 1px solid #e2e2e2;
+  border-radius: 8px 8px 0px 0px;
+}
+.scholarships-wrapper .table-content {
+  overflow-y: auto !important;
+  height: 155px;
+}
+.scholarships-wrapper table {
+  margin: 0 auto;
+  font-size: 10px;
+  width: 85%;
+}
+.scholarships-wrapper table thead,
+.scholarships-wrapper table tbody tr {
+  table-layout: fixed;
+  /* even columns width , fix width of table too*/
+}
+.scholarships-wrapper table th {
+  color: #686874;
+  font-weight: 400;
+}
+.scholarships-wrapper table td {
+  color: #04041c;
+}
+.scholarships-wrapper table th,
+.scholarships-wrapper table td {
+  padding: 0 12px;
+}
+.scholarships-wrapper table td,
+.scholarships-wrapper table th {
+  text-align: center;
+}
+
+.colleges-chart-wrapper .primary-card-rounded {
+  height: 295px !important;
+  padding: 10px 20px;
+}
+
+.gender-chart-wrapper .primary-card-rounded {
+  height: 295px !important;
+  padding: 10px 20px;
 }
 
 
