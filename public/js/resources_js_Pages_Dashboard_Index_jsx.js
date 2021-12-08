@@ -3853,28 +3853,7 @@ var RevenueBarChart = function RevenueBarChart() {
       width: "100%",
       height: 230
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(ResponsiveContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(BarChart, {
-    data: data
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(XAxis, {
-    fontSize: 10,
-    fontWeight: 300,
-    dataKey: "name",
-    strokeWidth: 1
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(YAxis, {
-    fontSize: 10,
-    fontWeight: 300,
-    strokeWidth: 1
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Bar, {
-    barSize: 20,
-    dataKey: "uv",
-    fill: "#8884d8"
-  }, data.map(function (entry, index) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Cell, {
-      key: "cell-".concat(index),
-      fill: colors[index],
-      strokeWidth: index === 2 ? 4 : 1
-    });
-  })))))));
+  })));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RevenueBarChart);
