@@ -11327,6 +11327,14 @@ body {
   font-size: 20px !important;
 }
 
+.f-21 {
+  font-size: 21px !important;
+}
+
+.f-22 {
+  font-size: 22px !important;
+}
+
 .fw-300 {
   font-weight: 300 !important;
 }
@@ -11375,6 +11383,10 @@ body {
   margin-right: 13px !important;
 }
 
+.mb-13 {
+  margin-bottom: 13px !important;
+}
+
 .mr-14 {
   margin-right: 14px !important;
 }
@@ -11397,6 +11409,10 @@ body {
 
 .mb-24 {
   margin-bottom: 24px !important;
+}
+
+.mt-27 {
+  margin-top: 27px !important;
 }
 
 .ml-30 {
@@ -12955,7 +12971,7 @@ main {
 }
 .dashboard-wrapper .amount-graph-wrapper .primary-card-rounded {
   padding: 14px 24px;
-  height: 391px !important;
+  height: 504px !important;
   padding: 20px;
 }
 
@@ -12976,10 +12992,45 @@ main {
   background: #343379;
 }
 
-.revenue-bar-chart-wrapper .primary-card-rounded {
-  padding: 20px 30px;
-  height: 528px !important;
+.chart-legend .indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+.chart-legend .primary-indicator {
+  background: #089752;
+}
+.chart-legend .secondary-indicator {
+  background: #343379;
+}
+
+.sponcors-wrapper .primary-card-rounded {
+  padding: 20px 0px 0px 0px !important;
   padding: 20px;
+}
+.sponcors-wrapper .primary-card-rounded .sponcors-card-header {
+  padding: 0px 20px;
+}
+.sponcors-wrapper .primary-card-rounded .sponcors-card-body {
+  padding: 0px 20px;
+  background: #FCFCFC;
+  margin-bottom: 20px;
+}
+.sponcors-wrapper .total-sponsors {
+  border-bottom: 1px solid grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.funds-pie-chart-wrapper .primary-card-rounded {
+  padding: 20px 30px;
+  padding: 20px;
+}
+.funds-pie-chart-wrapper .primary-card-rounded .pie-chart-legend .legend-color {
+  width: 10px;
+  height: 10px;
 }
 
 .bar-chart-header {
@@ -13031,9 +13082,15 @@ main {
   padding: 10px 20px;
 }
 
-.gender-chart-wrapper .primary-card-rounded {
-  height: 295px !important;
-  padding: 10px 20px;
+.revenue-top-countries-wrapper .primary-card-rounded {
+  height: 565px !important;
+  padding: 29px 30px;
+}
+
+.custom-tooltip {
+  padding: 4px 0px 4px 0px;
+  width: 74px;
+  background: white;
 }
 
 

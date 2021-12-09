@@ -14,7 +14,7 @@
     .amount-graph-wrapper {
         .primary-card-rounded {
             padding: 14px 24px;
-            height: 391px !important;
+            height: 504px !important;
             padding: 20px;
         }
     }
@@ -39,11 +39,55 @@
     }
 }
 
-.revenue-bar-chart-wrapper {
+.chart-legend {
+    .indicator {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .primary-indicator {
+        background: #089752;
+    }
+    .secondary-indicator {
+        background: #343379;
+    }
+}
+
+.sponcors-wrapper {
+    .primary-card-rounded {
+        padding: 20px 0px 0px 0px !important;
+        // height: 326px !important;
+        padding: 20px;
+        .sponcors-card-header{
+            padding: 0px 20px;
+        }
+        .sponcors-card-body{
+            padding: 0px 20px;
+            background: #FCFCFC;
+            margin-bottom: 20px;
+        }
+    }
+    .total-sponsors{
+        border-bottom: 1px solid grey;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.funds-pie-chart-wrapper {
     .primary-card-rounded {
         padding: 20px 30px;
-        height: 528px !important;
+        // height: 528px !important;
         padding: 20px;
+        .pie-chart-legend{
+            .legend-color{
+                width: 10px;
+                height: 10px;
+            }
+        }
+
     }
 }
 
@@ -100,9 +144,15 @@
         padding: 10px 20px;
     }
 }
-.gender-chart-wrapper {
+.revenue-top-countries-wrapper {
     .primary-card-rounded {
-        height: 295px !important;
-        padding: 10px 20px;
+        height: 565px !important;
+        padding: 29px 30px;
     }
+}
+
+.custom-tooltip{
+    padding: 4px 0px 4px 0px;
+    width: 74px;
+    background: rgba($color: white, $alpha: 1.0);
 }

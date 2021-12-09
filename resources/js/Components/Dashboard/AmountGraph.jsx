@@ -13,43 +13,43 @@ import {
 const AmountGraph = () => {
     const data = [
         {
-            name: "Page A",
+            name: "2015",
             uv: 4000,
             pv: 2400,
             amt: 2400,
         },
         {
-            name: "Page B",
+            name: "2016",
             uv: 3000,
             pv: 1398,
             amt: 2210,
         },
         {
-            name: "Page C",
+            name: "2017",
             uv: 2000,
             pv: 9800,
             amt: 2290,
         },
         {
-            name: "Page D",
+            name: "2018",
             uv: 2780,
             pv: 3908,
             amt: 2000,
         },
         {
-            name: "Page E",
+            name: "2019",
             uv: 1890,
             pv: 4800,
             amt: 2181,
         },
         {
-            name: "Page F",
+            name: "2020",
             uv: 2390,
             pv: 3800,
             amt: 2500,
         },
         {
-            name: "Page G",
+            name: "2021",
             uv: 3490,
             pv: 4300,
             amt: 2100,
@@ -59,29 +59,16 @@ const AmountGraph = () => {
         <div className="amount-graph-wrapper mb-24">
             <div className="primary-card-rounded">
                 <div className="area-chart-header justify-content-between">
-                    <h2 className="f-16 fw-500 mb-24">
-                        Amount spent Yearly / Semester
-                    </h2>
-
-                    <div className="chart-legend">
-                        <span className="mr-30">
-                            <span className="indicator primary-indicator" />
-                            Fall
-                        </span>
-                        <span>
-                            <span className="indicator secondary-indicator" />
-                            Spring
-                        </span>
-                    </div>
+                    <h2 className="f-16 fw-500 mb-24">Cash Inflow / Outflow</h2>
                 </div>{" "}
-                <div style={{ width: "100%", height: 300 }}>
+                <div style={{ width: "100%", height: 322 }}>
                     <ResponsiveContainer>
                         <LineChart
                             width={500}
                             height={300}
                             data={data}
                             margin={{
-                                top: 5,
+                                top: 45,
                                 right: 30,
                                 left: 20,
                                 bottom: 5,
@@ -104,6 +91,7 @@ const AmountGraph = () => {
                                 strokeWidth={1}
                             />
                             <Tooltip />
+                            {/* <Legend /> */}
 
                             <Line
                                 type="linear"
@@ -131,6 +119,17 @@ const AmountGraph = () => {
                             />
                         </LineChart>
                     </ResponsiveContainer>
+
+                    <div className="chart-legend text-center mt-27">
+                        <span className="mr-30">
+                            <span className="indicator primary-indicator" />
+                            Fall
+                        </span>
+                        <span>
+                            <span className="indicator secondary-indicator" />
+                            Spring
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
