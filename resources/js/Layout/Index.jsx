@@ -17,15 +17,15 @@ function Index({ children, title, currentPage }) {
     const staticSidebarTabsData = [
         { name: "Dashboard", image: HomeIcon, url: "/dashboard", key: 0 },
         {
-            name: "Studying Students",
+            name: "Financial Payments",
             image: GraduationIcon,
-            url: "/studying-students",
+            url: "/financial-payments",
             key: 0,
         },
         {
-            name: "Graduate Students",
+            name: "Expenses",
             image: GraduateIcon,
-            url: "/graduate-students",
+            url: "/expenses",
             key: 1,
         },
         {

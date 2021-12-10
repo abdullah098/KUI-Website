@@ -1,9 +1,16 @@
 import { Divider } from "antd";
 import React from "react";
+import ArrowBack from "../../Assets/icons/button-arrow-back.svg";
+import { InertiaLink } from "@inertiajs/inertia-react";
 
 const DetailsHeader = () => {
     return (
-        <div className="academic-details-wrapper__header">
+        <div className="payment-receipt-wrapper__header">
+            <InertiaLink href="" className="button-back">
+                <img src={ArrowBack} />
+                <span className="f-18 fw-600 color-secondary">Back</span>
+            </InertiaLink>
+
             <div className="d-flex align-items-center justify-content-between">
                 <div>
                     <p className="f-10 mb-0">demo@gmail.com</p>

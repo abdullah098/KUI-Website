@@ -22,7 +22,7 @@ const DataTable = ({
 
                 "&:last-child": {
                     display: "flex",
-                    justifyContent: "end",
+                    justifyContent: "center",
                 },
             },
         },
@@ -35,7 +35,7 @@ const DataTable = ({
                 },
                 "&:last-child": {
                     display: "flex",
-                    justifyContent: "end",
+                    justifyContent: "center",
                 },
             },
         },

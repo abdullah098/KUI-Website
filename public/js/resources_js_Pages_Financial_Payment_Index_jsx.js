@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_StudyingStudents_Index_jsx"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Financial_Payment_Index_jsx"],{
 
 /***/ "./node_modules/@ant-design/colors/dist/index.esm.js":
 /*!***********************************************************!*\
@@ -10874,10 +10874,10 @@ var useNavBarScrollAnimate = function useNavBarScrollAnimate() {
 
 /***/ }),
 
-/***/ "./resources/js/Pages/StudyingStudents/Index.jsx":
-/*!*******************************************************!*\
-  !*** ./resources/js/Pages/StudyingStudents/Index.jsx ***!
-  \*******************************************************/
+/***/ "./resources/js/Pages/Financial Payment/Index.jsx":
+/*!********************************************************!*\
+  !*** ./resources/js/Pages/Financial Payment/Index.jsx ***!
+  \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";

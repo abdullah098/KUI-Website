@@ -13435,7 +13435,7 @@ function Index(_ref) {
     url: "/dashboard",
     key: 0
   }, {
-    name: "Studying Students",
+    name: "Financial Payments",
     image: _assets_icons_student_graduation_png__WEBPACK_IMPORTED_MODULE_5__["default"],
     url: "/studying-students",
     key: 0

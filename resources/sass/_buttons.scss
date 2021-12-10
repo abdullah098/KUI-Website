@@ -77,3 +77,27 @@
         margin-bottom: 3px;
     }
 }
+
+.btn{
+    &__approve{
+        color: #089752 !important;
+        border: 1px solid #089752 !important;
+        border-radius: 4px !important;
+    }
+
+
+    &__expense {
+        background: #089752 !important;
+        color: #FFFFFF !important;
+        width: 119px !important;
+        height: 34px !important;
+        border-radius: 4px !important;
+    }
+
+    &__create-new-category {
+        color: #089752 !important;
+        box-shadow: none !important;
+    }
+}
+
+

@@ -11719,6 +11719,23 @@ html::-webkit-scrollbar-thumb {
   margin-bottom: 3px;
 }
 
+.btn__approve {
+  color: #089752 !important;
+  border: 1px solid #089752 !important;
+  border-radius: 4px !important;
+}
+.btn__expense {
+  background: #089752 !important;
+  color: #FFFFFF !important;
+  width: 119px !important;
+  height: 34px !important;
+  border-radius: 4px !important;
+}
+.btn__create-new-category {
+  color: #089752 !important;
+  box-shadow: none !important;
+}
+
 .primary-sidebar {
   width: 225px;
   height: 100vh;
@@ -11822,7 +11839,7 @@ main {
   width: max-content;
 }
 
-.academic-details-wrapper__header {
+.payment-receipt-wrapper__header {
   width: 100%;
   min-height: 173px;
   background: #ffffff;
@@ -11831,13 +11848,13 @@ main {
   padding: 17px 30px;
   margin: 15px 0;
 }
-.academic-details-wrapper__header .vertical-divider {
+.payment-receipt-wrapper__header .vertical-divider {
   height: 42px;
   width: 1px;
   background: #e4e4e4;
   margin: 0 25px;
 }
-.academic-details-wrapper__content {
+.payment-receipt-wrapper__content {
   width: 100%;
   min-height: 367px;
   background: #ffffff;
@@ -11846,22 +11863,26 @@ main {
   border-radius: 4px;
   padding: 17px 30px;
 }
-.academic-details-wrapper__content .ant-table-thead > tr > th {
+.payment-receipt-wrapper__content .ant-table-thead > tr > th {
   background-color: #fff !important;
 }
-.academic-details-wrapper__content .ant-table-thead > tr > th:before {
+.payment-receipt-wrapper__content .ant-table-thead > tr > th:before {
   background-color: transparent !important;
 }
-.academic-details-wrapper .ant-primary-tabs .ant-tabs-nav-list {
+.payment-receipt-wrapper .container-fluid .row .col-2 img, .payment-receipt-wrapper .container-sm .row .col-2 img, .payment-receipt-wrapper .container-md .row .col-2 img, .payment-receipt-wrapper .container-lg .row .col-2 img, .payment-receipt-wrapper .container-xl .row .col-2 img, .payment-receipt-wrapper .container-xxl .row .col-2 img {
+  width: 188px;
+  height: 158px;
+}
+.payment-receipt-wrapper .ant-primary-tabs .ant-tabs-nav-list {
   width: 100%;
 }
-.academic-details-wrapper .academic-record-page-card {
+.payment-receipt-wrapper .academic-record-page-card {
   padding: 32px 26px 32px 0 !important;
 }
-.academic-details-wrapper .course-record-wrapper .primary-table-wrapper {
+.payment-receipt-wrapper .course-record-wrapper .primary-table-wrapper {
   min-height: 516px !important;
 }
-.academic-details-wrapper .course-record-wrapper .primary-search {
+.payment-receipt-wrapper .course-record-wrapper .primary-search {
   width: 252px !important;
 }
 

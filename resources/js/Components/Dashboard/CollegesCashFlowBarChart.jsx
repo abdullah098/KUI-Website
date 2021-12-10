@@ -68,7 +68,7 @@ const CollegesCashFlowBarChart = () => {
 
                 <div style={{ width: "100%", height: 230 }}>
                     <ResponsiveContainer>
-                        <BarChart data={data}>
+                        <BarChart data={data} barGap={0}>
                             <CartesianGrid
                                 vertical={false}
                                 stroke="#EEEEEE"

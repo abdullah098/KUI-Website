@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_GraduateStudents_Details_jsx"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Financial_Payment_Details_jsx"],{
 
 /***/ "./node_modules/@ant-design/colors/dist/index.esm.js":
 /*!***********************************************************!*\
@@ -13010,26 +13010,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/divider/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/divider/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Assets_icons_button_arrow_back_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Assets/icons/button-arrow-back.svg */ "./resources/js/Assets/icons/button-arrow-back.svg");
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-
-
 
 
 
 var DetailsHeader = function DetailsHeader() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "payment-receipt-wrapper__header"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaLink, {
-    href: "",
-    className: "button-back"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: _Assets_icons_button_arrow_back_svg__WEBPACK_IMPORTED_MODULE_1__["default"]
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-    className: "f-18 fw-600 color-secondary"
-  }, "Back")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "academic-details-wrapper__header"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "d-flex align-items-center justify-content-between"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "f-10 mb-0"
@@ -13057,7 +13046,7 @@ var DetailsHeader = function DetailsHeader() {
     className: "vertical-divider"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "color-black-pearl mb-0"
-  }, "ID-123"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "ID-123"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: "primary-divider"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "d-flex justify-content-between"
@@ -13448,12 +13437,12 @@ function Index(_ref) {
   }, {
     name: "Financial Payments",
     image: _assets_icons_student_graduation_png__WEBPACK_IMPORTED_MODULE_5__["default"],
-    url: "/financial-payments",
+    url: "/studying-students",
     key: 0
   }, {
-    name: "Expenses",
+    name: "Graduate Students",
     image: _assets_icons_graduation_cap_png__WEBPACK_IMPORTED_MODULE_4__["default"],
-    url: "/expenses",
+    url: "/graduate-students",
     key: 1
   }, {
     name: "Academic Students",
@@ -13550,10 +13539,10 @@ var TopNavigation = function TopNavigation(_ref) {
 
 /***/ }),
 
-/***/ "./resources/js/Pages/GraduateStudents/Details.jsx":
-/*!*********************************************************!*\
-  !*** ./resources/js/Pages/GraduateStudents/Details.jsx ***!
-  \*********************************************************/
+/***/ "./resources/js/Pages/Financial Payment/Details.jsx":
+/*!**********************************************************!*\
+  !*** ./resources/js/Pages/Financial Payment/Details.jsx ***!
+  \**********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -13566,7 +13555,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Components_Students_ResultCardContent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Components/Students/ResultCardContent */ "./resources/js/Components/Students/ResultCardContent.jsx");
 /* harmony import */ var _Assets_icons_button_arrow_back_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Assets/icons/button-arrow-back.svg */ "./resources/js/Assets/icons/button-arrow-back.svg");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _Components_Students_DetailsHeader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../Components/Students/DetailsHeader */ "./resources/js/Components/Students/DetailsHeader.jsx");
+/* harmony import */ var _Components_Students_DetailsHeader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Components/Students/DetailsHeader */ "./resources/js/Components/Students/DetailsHeader.jsx");
 
 
 

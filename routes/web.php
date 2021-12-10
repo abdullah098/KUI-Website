@@ -20,17 +20,20 @@ Route::get('login', function () {
 Route::get('dashboard', function () {
     return Inertia::render('Dashboard/Index');
 });
-Route::get('studying-students', function () {
-    return Inertia::render('StudyingStudents/Index');
+Route::get('financial-payments', function () {
+    return Inertia::render('FinancialPayment/Index');
 });
-Route::get('studying-students/{id}', function () {
-    return Inertia::render('StudyingStudents/Details');
+Route::get('financial-payments/{id}', function () {
+    return Inertia::render('FinancialPayment/Details');
 });
-Route::get('graduate-students', function () {
-    return Inertia::render('GraduateStudents/Index');
+Route::get('expenses', function () {
+    return Inertia::render('Expenses/Index');
 });
-Route::get('graduate-students/{id}', function () {
-    return Inertia::render('GraduateStudents/Details');
+Route::get('expenses/{id}', function ($id) {
+    return Inertia::render('Expenses/Details', ["id" => $id]);
+});
+Route::get('expenses/{id}/{expense_id}', function () {
+    return Inertia::render('Expenses/FullDetail');
 });
 Route::get('mail/inbox', function () {
     return Inertia::render('MailBox/Inbox');

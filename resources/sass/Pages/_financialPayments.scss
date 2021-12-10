@@ -1,4 +1,4 @@
-.academic-details-wrapper {
+.payment-receipt-wrapper {
     &__header {
         width: 100%;
         min-height: 173px;
@@ -29,6 +29,17 @@
         }
         .ant-table-thead > tr > th:before {
             background-color: transparent !important;
+        }
+    }
+
+    .container-fluid{
+        .row{
+            .col-2{
+                img{
+                    width: 188px;
+                    height: 158px;
+                }
+            }
         }
     }
 

@@ -3800,7 +3800,8 @@ var CollegesCashFlowBarChart = function CollegesCashFlowBarChart() {
       height: 230
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(recharts__WEBPACK_IMPORTED_MODULE_1__.ResponsiveContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(recharts__WEBPACK_IMPORTED_MODULE_2__.BarChart, {
-    data: data
+    data: data,
+    barGap: 0
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(recharts__WEBPACK_IMPORTED_MODULE_3__.CartesianGrid, {
     vertical: false,
     stroke: "#EEEEEE",
@@ -4347,14 +4348,14 @@ function Index(_ref) {
     url: "/dashboard",
     key: 0
   }, {
-    name: "Studying Students",
+    name: "Financial Payments",
     image: _assets_icons_student_graduation_png__WEBPACK_IMPORTED_MODULE_5__["default"],
-    url: "/studying-students",
+    url: "/financial-payments",
     key: 0
   }, {
-    name: "Graduate Students",
+    name: "Expenses",
     image: _assets_icons_graduation_cap_png__WEBPACK_IMPORTED_MODULE_4__["default"],
-    url: "/graduate-students",
+    url: "/expenses",
     key: 1
   }, {
     name: "Academic Students",

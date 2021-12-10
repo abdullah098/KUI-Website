@@ -10975,7 +10975,7 @@ var DataTable = function DataTable(_ref) {
         fontSize: "12px",
         "&:last-child": {
           display: "flex",
-          justifyContent: "end"
+          justifyContent: "center"
         }
       }
     },
@@ -10987,7 +10987,7 @@ var DataTable = function DataTable(_ref) {
         },
         "&:last-child": {
           display: "flex",
-          justifyContent: "end"
+          justifyContent: "center"
         }
       }
     }
@@ -11127,14 +11127,14 @@ function Index(_ref) {
     url: "/dashboard",
     key: 0
   }, {
-    name: "Studying Students",
+    name: "Financial Payments",
     image: _assets_icons_student_graduation_png__WEBPACK_IMPORTED_MODULE_5__["default"],
-    url: "/studying-students",
+    url: "/financial-payments",
     key: 0
   }, {
-    name: "Graduate Students",
+    name: "Expenses",
     image: _assets_icons_graduation_cap_png__WEBPACK_IMPORTED_MODULE_4__["default"],
-    url: "/graduate-students",
+    url: "/expenses",
     key: 1
   }, {
     name: "Academic Students",

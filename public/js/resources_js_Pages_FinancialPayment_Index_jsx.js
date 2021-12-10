@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_StudyingStudents_Index_jsx"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_FinancialPayment_Index_jsx"],{
 
 /***/ "./node_modules/@ant-design/colors/dist/index.esm.js":
 /*!***********************************************************!*\
@@ -10695,74 +10695,9 @@ var FormInput = function FormInput(_ref) {
 
 /***/ }),
 
-/***/ "./resources/js/Components/Common/ExportDropdown.jsx":
-/*!***********************************************************!*\
-  !*** ./resources/js/Components/Common/ExportDropdown.jsx ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/button/index.js");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/menu/index.js");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/dropdown/index.js");
-/* harmony import */ var _Assets_icons_export_icon_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Assets/icons/export-icon.svg */ "./resources/js/Assets/icons/export-icon.svg");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-var _excluded = ["apiEndpoint"];
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-
-
-
- // export dropdown
-
-var ExportDropdown = function ExportDropdown(_ref) {
-  var apiEndpoint = _ref.apiEndpoint,
-      rest = _objectWithoutProperties(_ref, _excluded);
-
-  var handleExportClick = function handleExportClick(item) {
-    var _item$key;
-
-    window.open(apiEndpoint + "?extension=".concat((_item$key = item.key) !== null && _item$key !== void 0 ? _item$key : "xlsx"), "_blank");
-  };
-
-  var menu = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    className: "export-dropdown-menu",
-    onClick: handleExportClick
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
-    key: "csv"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", null, "CSV")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["default"].Divider, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["default"].Item, {
-    key: "xlsx"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", null, "Excel")));
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["default"], _extends({
-    overlay: menu,
-    trigger: ["click"],
-    className: "mr-16"
-  }, rest), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(antd__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "button-default button-export",
-    icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
-      className: "mr-8",
-      src: _Assets_icons_export_icon_svg__WEBPACK_IMPORTED_MODULE_0__["default"],
-      alt: "export"
-    })
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("span", null, "Export")));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ExportDropdown);
-
-/***/ }),
-
-/***/ "./resources/js/Constants/TableColumns/StudyingStudents.js":
+/***/ "./resources/js/Constants/TableColumns/FinancialPayment.js":
 /*!*****************************************************************!*\
-  !*** ./resources/js/Constants/TableColumns/StudyingStudents.js ***!
+  !*** ./resources/js/Constants/TableColumns/FinancialPayment.js ***!
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -10772,59 +10707,93 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "columns": () => (/* binding */ columns)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/dropdown/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/button/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/menu/index.js");
+/* harmony import */ var _ant_design_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ant-design/icons */ "./node_modules/@ant-design/icons/es/icons/DownOutlined.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Assets_icons_greenEye_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Assets/icons/greenEye.svg */ "./resources/js/Assets/icons/greenEye.svg");
 
+
+
+
+ // const useEffect = () => {
+// };
 
 var columns = [{
   name: "S.no",
   selector: function selector(row, index) {
     return index + 1;
-  }
+  },
+  center: true
 }, {
   name: "ID",
   selector: function selector(row) {
     return row.id;
-  }
+  },
+  center: true
 }, {
-  name: "Name",
+  name: "Student Name",
   selector: function selector(row) {
+    return row.student_name;
+  },
+  center: true
+}, {
+  name: "Payment Method",
+  selector: function selector(row) {
+    return row.payment_method;
+  },
+  center: true
+}, {
+  name: "Semester",
+  selector: function selector(row) {
+    return row.semester;
+  },
+  center: true
+}, {
+  name: "Created By",
+  selector: function selector(row) {
+    return row.created_by;
+  },
+  center: true
+}, {
+  name: "Status",
+  cell: function cell() {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      overlay: menu,
+      placement: "bottomCenter",
+      arrow: true // visible={visible}
+
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      className: "btn__approve"
+    }, "Approved ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ant_design_icons__WEBPACK_IMPORTED_MODULE_5__["default"], null)));
+  },
+  center: true
+}, {
+  name: "Actions",
+  cell: function cell(row) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
-      href: "/studying-students/".concat(row.id)
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("u", {
-      className: "color-persian-blue fw-500 cursor-pointer"
-    }, row.name));
-  }
-}, {
-  name: "Iqama Country",
-  selector: function selector(row) {
-    return row.iqama_country;
-  }
-}, {
-  name: "College",
-  selector: function selector(row) {
-    return row.college;
-  }
-}, {
-  name: "Scholarship",
-  selector: function selector(row) {
-    return row.scholarship;
-  }
-}, {
-  name: "Country",
-  selector: function selector(row) {
-    return row.country;
-  }
-}, {
-  name: "Major",
-  selector: function selector(row) {
-    return row.major;
-  }
-}, {
-  name: "Commutative Avg",
-  selector: function selector(row) {
-    return row.commutative_avg;
-  }
+      href: "/financial-payments/".concat(row.id)
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      ghost: true
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      src: _Assets_icons_greenEye_svg__WEBPACK_IMPORTED_MODULE_2__["default"],
+      alt: ""
+    })));
+  },
+  center: true
 }];
+var menu = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"].Item, {
+  key: "1"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+  type: "text"
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"].Item, {
+  key: "2"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  className: "d-flex justify-content-end"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_4__["default"], null, "Cancel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  className: "ms-2"
+}, "Save"))));
 
 /***/ }),
 
@@ -10874,9 +10843,9 @@ var useNavBarScrollAnimate = function useNavBarScrollAnimate() {
 
 /***/ }),
 
-/***/ "./resources/js/Pages/StudyingStudents/Index.jsx":
+/***/ "./resources/js/Pages/FinancialPayment/Index.jsx":
 /*!*******************************************************!*\
-  !*** ./resources/js/Pages/StudyingStudents/Index.jsx ***!
+  !*** ./resources/js/Pages/FinancialPayment/Index.jsx ***!
   \*******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -10887,10 +10856,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _layout_Index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../layout/Index */ "./resources/js/layout/Index.jsx");
-/* harmony import */ var _components_common_DataTable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../components/common/DataTable */ "./resources/js/components/common/DataTable.jsx");
-/* harmony import */ var _Components_Common_Antd_FormInput__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../Components/Common/Antd/FormInput */ "./resources/js/Components/Common/Antd/FormInput.jsx");
-/* harmony import */ var _Components_Common_ExportDropdown__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/Common/ExportDropdown */ "./resources/js/Components/Common/ExportDropdown.jsx");
-/* harmony import */ var _Constants_TableColumns_StudyingStudents__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../Constants/TableColumns/StudyingStudents */ "./resources/js/Constants/TableColumns/StudyingStudents.js");
+/* harmony import */ var _components_common_DataTable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/common/DataTable */ "./resources/js/components/common/DataTable.jsx");
+/* harmony import */ var _Components_Common_Antd_FormInput__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/Common/Antd/FormInput */ "./resources/js/Components/Common/Antd/FormInput.jsx");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var _Constants_TableColumns_FinancialPayment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Constants/TableColumns/FinancialPayment */ "./resources/js/Constants/TableColumns/FinancialPayment.js");
 
 
 
@@ -10901,24 +10870,37 @@ __webpack_require__.r(__webpack_exports__);
 var Index = function Index() {
   var data = [{
     id: 0,
-    name: "Muzamil Afirid",
-    iqama_country: "Iqama Arabia",
-    college: "English",
-    scholarship: "Full",
-    country: "Saudi Arabia",
-    major: "Islamic Sharia",
-    commutative_avg: 2.3
-  }];
+    student_name: "Muzamil Afirid",
+    fee_for: "Study",
+    payment_method: "Bank Transfer",
+    semester: 6,
+    created_by: "John Deo",
+    status: "Approved",
+    actions: ""
+  }, {
+    id: 1,
+    student_name: "Muzamil Afirid",
+    fee_for: "Study",
+    payment_method: "Bank Transfer",
+    semester: 6,
+    created_by: "John Deo",
+    status: "Approved",
+    actions: ""
+  }]; // const [visible, setVisible] = React.useState(false);
+  // const handleVisibilty = () => {
+  //     setVisible(true);
+  // };
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_layout_Index__WEBPACK_IMPORTED_MODULE_1__["default"], {
     currentPage: 1
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
     className: "f-14 fw-600 mb-20"
-  }, "Studying Students"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, "Financial payments"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "primary-card"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "primary-table"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_common_DataTable__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    columns: _Constants_TableColumns_StudyingStudents__WEBPACK_IMPORTED_MODULE_5__.columns,
+    columns: _Constants_TableColumns_FinancialPayment__WEBPACK_IMPORTED_MODULE_5__.columns,
     data: data,
     pagination: true,
     keyField: "id"
@@ -10928,13 +10910,11 @@ var Index = function Index() {
     className: "d-flex align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
     className: "f-16 fw-500 mb-0"
-  }, "Showing enrolled students :", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+  }, "Showing all payments :", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
     className: "mx-1"
   }, "16"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "d-flex align-items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Common_ExportDropdown__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "mr-20"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Common_Antd_FormInput__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Common_Antd_FormInput__WEBPACK_IMPORTED_MODULE_3__["default"], {
     className: "mb-0",
     type: "search"
   })))))));
@@ -10980,7 +10960,7 @@ var DataTable = function DataTable(_ref) {
         fontSize: "12px",
         "&:last-child": {
           display: "flex",
-          justifyContent: "end"
+          justifyContent: "center"
         }
       }
     },
@@ -10992,7 +10972,7 @@ var DataTable = function DataTable(_ref) {
         },
         "&:last-child": {
           display: "flex",
-          justifyContent: "end"
+          justifyContent: "center"
         }
       }
     }
@@ -11134,12 +11114,12 @@ function Index(_ref) {
   }, {
     name: "Financial Payments",
     image: _assets_icons_student_graduation_png__WEBPACK_IMPORTED_MODULE_5__["default"],
-    url: "/studying-students",
+    url: "/financial-payments",
     key: 0
   }, {
-    name: "Graduate Students",
+    name: "Expenses",
     image: _assets_icons_graduation_cap_png__WEBPACK_IMPORTED_MODULE_4__["default"],
-    url: "/graduate-students",
+    url: "/expenses",
     key: 1
   }, {
     name: "Academic Students",
@@ -12734,10 +12714,10 @@ function alignPoint(el, tgtPoint, align) {
 
 /***/ }),
 
-/***/ "./resources/js/Assets/icons/export-icon.svg":
-/*!***************************************************!*\
-  !*** ./resources/js/Assets/icons/export-icon.svg ***!
-  \***************************************************/
+/***/ "./resources/js/Assets/icons/greenEye.svg":
+/*!************************************************!*\
+  !*** ./resources/js/Assets/icons/greenEye.svg ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -12745,7 +12725,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/export-icon.svg?28bf7da3aa56731d915a83f2539c4b92");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/greenEye.svg?af4b557c7723d47c12b6e05a15d00036");
 
 /***/ }),
 
