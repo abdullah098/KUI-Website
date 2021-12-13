@@ -17192,13 +17192,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_kiu_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/kiu_logo.png */ "./resources/js/assets/kiu_logo.png");
 /* harmony import */ var _TopNavigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TopNavigation */ "./resources/js/Layout/TopNavigation.jsx");
 /* harmony import */ var _assets_icons_home_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/icons/home.png */ "./resources/js/assets/icons/home.png");
-/* harmony import */ var _assets_icons_graduation_cap_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/icons/graduation-cap.png */ "./resources/js/assets/icons/graduation-cap.png");
-/* harmony import */ var _assets_icons_student_graduation_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/icons/student-graduation.png */ "./resources/js/assets/icons/student-graduation.png");
-/* harmony import */ var _assets_icons_spell_check_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/icons/spell-check.png */ "./resources/js/assets/icons/spell-check.png");
-/* harmony import */ var _assets_icons_email_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/icons/email.png */ "./resources/js/assets/icons/email.png");
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
-/* harmony import */ var _Hooks_useNavBarScrollAnimate__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./../Hooks/useNavBarScrollAnimate */ "./resources/js/Hooks/useNavBarScrollAnimate.jsx");
+/* harmony import */ var _Assets_icons_financialPayment_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Assets/icons/financialPayment.svg */ "./resources/js/Assets/icons/financialPayment.svg");
+/* harmony import */ var _Assets_icons_expenses_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Assets/icons/expenses.svg */ "./resources/js/Assets/icons/expenses.svg");
+/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _Hooks_useNavBarScrollAnimate__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./../Hooks/useNavBarScrollAnimate */ "./resources/js/Hooks/useNavBarScrollAnimate.jsx");
+/* harmony import */ var _Assets_icons_user_svg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Assets/icons/user.svg */ "./resources/js/Assets/icons/user.svg");
+/* harmony import */ var _Assets_icons_StudentWallet_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../Assets/icons/StudentWallet.svg */ "./resources/js/Assets/icons/StudentWallet.svg");
+/* harmony import */ var _Assets_icons_creditCard_svg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../Assets/icons/creditCard.svg */ "./resources/js/Assets/icons/creditCard.svg");
+
 
 
 
@@ -17217,7 +17219,7 @@ function Index(_ref) {
       currentPage = _ref.currentPage;
 
   // custom hook for navbar scroll animation
-  var _useNavBarScrollAnima = (0,_Hooks_useNavBarScrollAnimate__WEBPACK_IMPORTED_MODULE_10__["default"])(),
+  var _useNavBarScrollAnima = (0,_Hooks_useNavBarScrollAnimate__WEBPACK_IMPORTED_MODULE_8__["default"])(),
       showBG = _useNavBarScrollAnima.showBG;
 
   var staticSidebarTabsData = [{
@@ -17227,25 +17229,36 @@ function Index(_ref) {
     key: 0
   }, {
     name: "Financial Payments",
-    image: _assets_icons_student_graduation_png__WEBPACK_IMPORTED_MODULE_5__["default"],
+    image: _Assets_icons_financialPayment_svg__WEBPACK_IMPORTED_MODULE_4__["default"],
     url: "/financial-payments",
-    key: 0
-  }, {
-    name: "Expenses",
-    image: _assets_icons_graduation_cap_png__WEBPACK_IMPORTED_MODULE_4__["default"],
-    url: "/expenses",
     key: 1
   }, {
-    name: "Academic Students",
-    image: _assets_icons_spell_check_png__WEBPACK_IMPORTED_MODULE_6__["default"],
-    url: "/academic-students",
+    name: "Expenses",
+    image: _Assets_icons_expenses_svg__WEBPACK_IMPORTED_MODULE_5__["default"],
+    url: "/expenses",
     key: 2
   }, {
-    name: "Mail Box",
-    image: _assets_icons_email_png__WEBPACK_IMPORTED_MODULE_7__["default"],
-    url: "/mail/inbox",
+    name: "Student Wallets",
+    image: _Assets_icons_StudentWallet_svg__WEBPACK_IMPORTED_MODULE_10__["default"],
+    url: "/student-wallets",
     key: 3
-  }];
+  }, {
+    name: "Employees",
+    image: _Assets_icons_user_svg__WEBPACK_IMPORTED_MODULE_9__["default"],
+    url: "/employees",
+    key: 4
+  }, {
+    name: "Payment Account",
+    image: _Assets_icons_creditCard_svg__WEBPACK_IMPORTED_MODULE_11__["default"],
+    url: "/payment-account",
+    key: 5
+  } // {
+  //     name: "Mail Box",
+  //     image: EmailIcon,
+  //     url: "/mail/inbox",
+  //     key: 4,
+  // },
+  ];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", {
     className: "primary-sidebar"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -17257,17 +17270,17 @@ function Index(_ref) {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, staticSidebarTabsData.map(function (item, index) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
       key: index,
-      className: (0,clsx__WEBPACK_IMPORTED_MODULE_9__["default"])(currentPage === index && "active")
+      className: (0,clsx__WEBPACK_IMPORTED_MODULE_7__["default"])(currentPage === index && "active")
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
       src: item.image
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_8__.InertiaLink, {
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_6__.InertiaLink, {
       preserveState: true,
       href: item.url
     }, item.name));
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "flex-1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_9__["default"])("top-navigation ", showBG > 0 && "scroll-active")
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_7__["default"])("top-navigation ", showBG > 0 && "scroll-active")
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TopNavigation__WEBPACK_IMPORTED_MODULE_2__["default"], {
     currentPage: currentPage,
     title: title,
@@ -22636,6 +22649,66 @@ function alignPoint(el, tgtPoint, align) {
 
 /***/ }),
 
+/***/ "./resources/js/Assets/icons/StudentWallet.svg":
+/*!*****************************************************!*\
+  !*** ./resources/js/Assets/icons/StudentWallet.svg ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/StudentWallet.svg?8d5fbb323f9bca2b7533eaed65d161a3");
+
+/***/ }),
+
+/***/ "./resources/js/Assets/icons/creditCard.svg":
+/*!**************************************************!*\
+  !*** ./resources/js/Assets/icons/creditCard.svg ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/creditCard.svg?e529713d82bd3a8da6e54241db756390");
+
+/***/ }),
+
+/***/ "./resources/js/Assets/icons/expenses.svg":
+/*!************************************************!*\
+  !*** ./resources/js/Assets/icons/expenses.svg ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/expenses.svg?326ebd738d5c5528e3ee3054ad8be3af");
+
+/***/ }),
+
+/***/ "./resources/js/Assets/icons/financialPayment.svg":
+/*!********************************************************!*\
+  !*** ./resources/js/Assets/icons/financialPayment.svg ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/financialPayment.svg?483e3954e8ad7d0360cb300ff2726421");
+
+/***/ }),
+
 /***/ "./resources/js/Assets/icons/mail-active-indicator.svg":
 /*!*************************************************************!*\
   !*** ./resources/js/Assets/icons/mail-active-indicator.svg ***!
@@ -22648,6 +22721,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/mail-active-indicator.svg?9de2aad1136ce5d95ff86bddc1bc8bd1");
+
+/***/ }),
+
+/***/ "./resources/js/Assets/icons/user.svg":
+/*!********************************************!*\
+  !*** ./resources/js/Assets/icons/user.svg ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/user.svg?abc18b1563cafca898eea170948c31ea");
 
 /***/ }),
 
@@ -22696,36 +22784,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/assets/icons/email.png":
-/*!*********************************************!*\
-  !*** ./resources/js/assets/icons/email.png ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/email.png?8d3846d3b7109bd768722b350dbd84e7");
-
-/***/ }),
-
-/***/ "./resources/js/assets/icons/graduation-cap.png":
-/*!******************************************************!*\
-  !*** ./resources/js/assets/icons/graduation-cap.png ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/graduation-cap.png?be76523e400ca13bce4206a8cde8b462");
-
-/***/ }),
-
 /***/ "./resources/js/assets/icons/home.png":
 /*!********************************************!*\
   !*** ./resources/js/assets/icons/home.png ***!
@@ -22753,36 +22811,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logout-icon.png?d835de7498947c124229ba73d486344d");
-
-/***/ }),
-
-/***/ "./resources/js/assets/icons/spell-check.png":
-/*!***************************************************!*\
-  !*** ./resources/js/assets/icons/spell-check.png ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/spell-check.png?2aa471ce9d1a9a55cef73220c05aed60");
-
-/***/ }),
-
-/***/ "./resources/js/assets/icons/student-graduation.png":
-/*!**********************************************************!*\
-  !*** ./resources/js/assets/icons/student-graduation.png ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/student-graduation.png?a265e88fcc2729c91d0664b032ed91e4");
 
 /***/ }),
 

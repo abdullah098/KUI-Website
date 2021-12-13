@@ -104,14 +104,24 @@ body {
 .mb-18 {
     margin-bottom: 18px !important;
 }
+.mr-18 {
+    margin-right: 18px !important;
+}
 .mb-20 {
     margin-bottom: 20px !important;
 }
 .mr-20 {
     margin-right: 20px !important;
 }
+.mt-23 {
+    margin-top: 23px !important;
+}
 .mb-24 {
     margin-bottom: 24px !important;
+}
+.my-25 {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
 }
 .mt-27 {
     margin-top: 27px !important;
@@ -125,6 +135,25 @@ body {
 .mr-30 {
     margin-right: 30px !important;
 }
+.mb-45 {
+    margin-bottom: 45px !important;
+}
+
+
+// =========================================================
+.px-6 {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+}
+.py-9 {
+    padding-top: 9px !important;
+    padding-bottom: 9px !important;
+}
+.py-25 {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+}
+
 
 // =========================================================
 //                          Color
@@ -165,6 +194,9 @@ body {
 }
 .color-abbey {
     color: #4f4f58 !important;
+}
+.color-grey-F8{
+    background-color: #f8f8f8 !important;
 }
 
 .w-27 {

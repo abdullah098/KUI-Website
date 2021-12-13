@@ -98,6 +98,25 @@
         color: #089752 !important;
         box-shadow: none !important;
     }
+
+    &__create{
+        background: #089752 !important;
+        color: #FFFFFF !important;
+        box-shadow: none !important;
+        border-radius: 4px;
+    }
+
+    &__active{
+        color: #089752 !important;
+        border: 1px solid #089752 !important;
+        border-radius: 4px !important;
+
+        &:active{
+            color: #FF4E4E !important;
+            border: 1px solid #FF4E4E !important;
+            border-radius: 4px !important;
+        }
+    }
 }
 
 

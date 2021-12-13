@@ -35,21 +35,32 @@ Route::get('expenses/{id}', function ($id) {
 Route::get('expenses/{id}/{expense_id}', function () {
     return Inertia::render('Expenses/FullDetail');
 });
-Route::get('mail/inbox', function () {
-    return Inertia::render('MailBox/Inbox');
+Route::get('student-wallets', function () {
+    return Inertia::render('StudentWallets/Index');
 });
-Route::get('mail/inbox/{id}', function () {
-    return Inertia::render('MailBox/InboxDetails');
+Route::get('employees', function () {
+    return Inertia::render('Employees/Index');
 });
-Route::get('mail/sent', function () {
-    return Inertia::render('MailBox/Sent');
+Route::get('payment-account', function () {
+    return Inertia::render('PaymentAccount/Index');
 });
-Route::get('mail/sent/{id}', function () {
-    return Inertia::render('MailBox/SentDetails');
-});
-Route::get('mail/draft', function () {
-    return Inertia::render('MailBox/Draft');
-});
-Route::get('mail/trash', function () {
-    return Inertia::render('MailBox/Trash');
-});
+
+
+// Route::get('mail/inbox', function () {
+//     return Inertia::render('MailBox/Inbox');
+// });
+// Route::get('mail/inbox/{id}', function () {
+//     return Inertia::render('MailBox/InboxDetails');
+// });
+// Route::get('mail/sent', function () {
+//     return Inertia::render('MailBox/Sent');
+// });
+// Route::get('mail/sent/{id}', function () {
+//     return Inertia::render('MailBox/SentDetails');
+// });
+// Route::get('mail/draft', function () {
+//     return Inertia::render('MailBox/Draft');
+// });
+// Route::get('mail/trash', function () {
+//     return Inertia::render('MailBox/Trash');
+// });

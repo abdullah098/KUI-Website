@@ -11399,6 +11399,10 @@ body {
   margin-bottom: 18px !important;
 }
 
+.mr-18 {
+  margin-right: 18px !important;
+}
+
 .mb-20 {
   margin-bottom: 20px !important;
 }
@@ -11407,8 +11411,17 @@ body {
   margin-right: 20px !important;
 }
 
+.mt-23 {
+  margin-top: 23px !important;
+}
+
 .mb-24 {
   margin-bottom: 24px !important;
+}
+
+.my-25 {
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
 }
 
 .mt-27 {
@@ -11425,6 +11438,25 @@ body {
 
 .mr-30 {
   margin-right: 30px !important;
+}
+
+.mb-45 {
+  margin-bottom: 45px !important;
+}
+
+.px-6 {
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+
+.py-9 {
+  padding-top: 9px !important;
+  padding-bottom: 9px !important;
+}
+
+.py-25 {
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
 }
 
 .color-danger {
@@ -11473,6 +11505,10 @@ body {
 
 .color-abbey {
   color: #4f4f58 !important;
+}
+
+.color-grey-F8 {
+  background-color: #f8f8f8 !important;
 }
 
 .w-27 {
@@ -11734,6 +11770,22 @@ html::-webkit-scrollbar-thumb {
 .btn__create-new-category {
   color: #089752 !important;
   box-shadow: none !important;
+}
+.btn__create {
+  background: #089752 !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+  border-radius: 4px;
+}
+.btn__active {
+  color: #089752 !important;
+  border: 1px solid #089752 !important;
+  border-radius: 4px !important;
+}
+.btn__active:active {
+  color: #FF4E4E !important;
+  border: 1px solid #FF4E4E !important;
+  border-radius: 4px !important;
 }
 
 .primary-sidebar {

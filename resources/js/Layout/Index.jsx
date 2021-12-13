@@ -2,39 +2,62 @@ import React from "react";
 import Logo from "../assets/kiu_logo.png";
 import TopNavigation from "./TopNavigation";
 import HomeIcon from "../assets/icons/home.png";
-import GraduateIcon from "../assets/icons/graduation-cap.png";
-import GraduationIcon from "../assets/icons/student-graduation.png";
-import AcademicIcon from "../assets/icons/spell-check.png";
-import EmailIcon from "../assets/icons/email.png";
+import FinancialPayment from "../Assets/icons/financialPayment.svg";
+import Expenses from "../Assets/icons/expenses.svg";
 import { InertiaLink } from "@inertiajs/inertia-react";
 import clsx from "clsx";
 import useNavBarScrollAnimate from "./../Hooks/useNavBarScrollAnimate";
+import UserIcon from "../Assets/icons/user.svg";
+import Wallet from "../Assets/icons/StudentWallet.svg";
+import CreditCard from "../Assets/icons/creditCard.svg";
 
 function Index({ children, title, currentPage }) {
     // custom hook for navbar scroll animation
     const { showBG } = useNavBarScrollAnimate();
 
     const staticSidebarTabsData = [
-        { name: "Dashboard", image: HomeIcon, url: "/dashboard", key: 0 },
         {
-            name: "Financial Payments",
-            image: GraduationIcon,
-            url: "/financial-payments",
+            name: "Dashboard",
+            image: HomeIcon,
+            url: "/dashboard",
             key: 0,
         },
         {
-            name: "Expenses",
-            image: GraduateIcon,
-            url: "/expenses",
+            name: "Financial Payments",
+            image: FinancialPayment,
+            url: "/financial-payments",
             key: 1,
         },
         {
-            name: "Academic Students",
-            image: AcademicIcon,
-            url: "/academic-students",
+            name: "Expenses",
+            image: Expenses,
+            url: "/expenses",
             key: 2,
         },
-        { name: "Mail Box", image: EmailIcon, url: "/mail/inbox", key: 3 },
+        {
+            name: "Student Wallets",
+            image: Wallet,
+            url: "/student-wallets",
+            key: 3,
+        },
+        {
+            name: "Employees",
+            image: UserIcon,
+            url: "/employees",
+            key: 4,
+        },
+        {
+            name: "Payment Account",
+            image: CreditCard,
+            url: "/payment-account",
+            key: 5,
+        },
+        // {
+        //     name: "Mail Box",
+        //     image: EmailIcon,
+        //     url: "/mail/inbox",
+        //     key: 4,
+        // },
     ];
 
     return (
