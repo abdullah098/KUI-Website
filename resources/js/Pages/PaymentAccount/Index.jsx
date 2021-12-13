@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../../layout/Index";
 import DataTable from "../../components/common/DataTable";
 import FormInput from "../../Components/Common/Antd/FormInput";
 import { InertiaLink } from "@inertiajs/inertia-react";
-import { Menu, Dropdown, Button } from "antd";
+import { Menu, Dropdown, Button, Modal } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import GreenEye from "../../Assets/icons/greenEye.svg";
 import EditIcon from "../../Assets/icons/editPencil.svg";
 import RemoveIcon from "../../Assets/icons/removeIcon.svg";
+import CreateNewAccount from "./CreateNewAccount";
 
 const Index = () => {
     const data = [
@@ -67,6 +68,7 @@ const Index = () => {
                     <Button className="border-0 shadow-none button-default ">
                         <img src={EditIcon} alt="" />
                     </Button>
+
                     <Button className="border-0 shadow-none button-default">
                         <img src={RemoveIcon} alt="" />
                     </Button>
@@ -96,6 +98,7 @@ const Index = () => {
                             </div>
 
                             <div className="d-flex align-items-center">
+                                <CreateNewAccount />
                                 <FormInput className="mb-0" type="search" />
                             </div>
                         </div>

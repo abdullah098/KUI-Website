@@ -1,15 +1,6 @@
 import React from "react";
-import {
-    BarChart,
-    Bar,
-    Cell,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    Legend,
-    ResponsiveContainer,
-} from "recharts";
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts";
+import { InertiaLink } from "@inertiajs/inertia-react";
 
 const RevenueFromTopCountries = () => {
     const data = [
@@ -60,9 +51,15 @@ const RevenueFromTopCountries = () => {
     return (
         <div className="revenue-top-countries-wrapper">
             <div className="primary-card-rounded">
-                <h2 className="f-16 fw-500 mb-18">
-                    Revenue From Top 10 Countries
-                </h2>
+                <div className="d-flex justify-content-between">
+                    <h2 className="f-16 fw-500 mb-18">
+                        Revenue From Top 10 Countries
+                    </h2>
+
+                    <InertiaLink href="/dashboard/revenue-all-countries">
+                        <u>View All</u>
+                    </InertiaLink>
+                </div>
 
                 <ResponsiveContainer width="100%" height="100%">
                     <BarChart

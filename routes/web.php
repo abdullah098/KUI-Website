@@ -20,6 +20,9 @@ Route::get('login', function () {
 Route::get('dashboard', function () {
     return Inertia::render('Dashboard/Index');
 });
+Route::get('/dashboard/revenue-all-countries', function () {
+    return Inertia::render('Dashboard/RevenueAllCountries');
+});
 Route::get('financial-payments', function () {
     return Inertia::render('FinancialPayment/Index');
 });

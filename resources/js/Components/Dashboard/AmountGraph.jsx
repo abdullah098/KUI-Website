@@ -1,4 +1,5 @@
 import React from "react";
+import { Select } from "antd";
 import {
     LineChart,
     Line,
@@ -55,11 +56,33 @@ const AmountGraph = () => {
             amt: 2100,
         },
     ];
+
+    // {
+    //     select
+    // }
+    const { Option } = Select;
+
+    const handleChange = (value) => {
+        console.log(`selected ${value}`);
+    };
+
     return (
         <div className="amount-graph-wrapper mb-24">
             <div className="primary-card-rounded">
-                <div className="area-chart-header justify-content-between">
+                <div className="area-chart-header d-flex justify-content-between">
                     <h2 className="f-16 fw-500 mb-24">Cash Inflow / Outflow</h2>
+                    <div className="d-flex align-items-center">
+                        <h4 className="f-14 mb-0 me-2">Last</h4>
+                        <Select
+                            defaultValue="8 Years"
+                            style={{ width: 100 }}
+                            onChange={handleChange}
+                            className="select-dropdown-custom"
+                        >
+                            <Option value="8">8 Years</Option>
+                            <Option value="10">10 Years</Option>
+                        </Select>
+                    </div>
                 </div>{" "}
                 <div style={{ width: "100%", height: 322 }}>
                     <ResponsiveContainer>
