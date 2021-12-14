@@ -2,12 +2,14 @@ import React from "react";
 import Layout from "../../layout/Index";
 import DataTable from "./../../components/common/DataTable";
 import FormInput from "./../../Components/Common/Antd/FormInput";
-import { columns } from "../../Constants/TableColumns/Expenses";
 import AddExpenseBtn from "./../../Components/Expenses/AddExpenseBtn";
 import { Button } from "antd";
 import AddCircle from "../../Assets/icons/addCircle.svg";
+import { InertiaLink } from "@inertiajs/inertia-react";
+import ActionButton from "../../Components/Expenses/ActionButton";
 
 const Index = () => {
+    const [actionState, setActionState] = React.useState("start");
     // data for the table to be displayed
     const data = [
         {
@@ -15,6 +17,34 @@ const Index = () => {
             category: "Inventory",
             total_expenses: "$30,213",
             action: "",
+        },
+        {
+            id: 1,
+            category: "Inventory",
+            total_expenses: "$30,213",
+            action: "",
+        },
+    ];
+    const columns = [
+        {
+            name: "S.no",
+            selector: (row, index) => index + 1,
+        },
+        {
+            name: "Category",
+            selector: (row) => (
+                <InertiaLink href={`/expenses/${row.id}`}>
+                    <u className="color-persian-blue"> {row.category} </u>
+                </InertiaLink>
+            ),
+        },
+        {
+            name: "Total Expenses",
+            selector: (row) => row.total_expenses,
+        },
+        {
+            name: "Action",
+            selector: (row) => <ActionButton />,
         },
     ];
 

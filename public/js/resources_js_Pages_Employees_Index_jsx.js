@@ -16567,7 +16567,7 @@ var Index = function Index() {
     designation: "$30,213",
     salary: "10,000",
     bank_name: "HDFC",
-    salary_status: "Pending",
+    salary_status: "Paid",
     amount_paid: "10,000",
     action: ""
   }];
@@ -16575,14 +16575,16 @@ var Index = function Index() {
     name: "S.no",
     selector: function selector(row, index) {
       return index + 1;
-    }
+    },
+    center: true
   }, {
     name: "ID",
     selector: function selector(row) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Employees_EmployeeIdModal__WEBPACK_IMPORTED_MODULE_8__["default"], {
         data: row.id
       });
-    }
+    },
+    center: true
   }, {
     name: "Name",
     selector: function selector(row) {
@@ -16606,13 +16608,17 @@ var Index = function Index() {
   }, {
     name: "Salary Status",
     selector: function selector(row) {
-      return row.salary_status;
-    }
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h6", {
+        className: "f-12 color-primary"
+      }, row.salary_status);
+    },
+    center: true
   }, {
     name: "Amount Paid",
     selector: function selector(row) {
       return row.amount_paid;
-    }
+    },
+    center: true
   }, {
     name: "Action",
     selector: function selector(row) {
@@ -16620,7 +16626,8 @@ var Index = function Index() {
         src: _Assets_icons_editPencil_svg__WEBPACK_IMPORTED_MODULE_6__["default"],
         alt: ""
       });
-    }
+    },
+    center: true
   }]; // select handlers
 
   var onChange = function onChange(value) {

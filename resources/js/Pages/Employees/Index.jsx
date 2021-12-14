@@ -18,7 +18,7 @@ const Index = () => {
             designation: "$30,213",
             salary: "10,000",
             bank_name: "HDFC",
-            salary_status: "Pending",
+            salary_status: "Paid",
             amount_paid: "10,000",
             action: "",
         },
@@ -28,10 +28,12 @@ const Index = () => {
         {
             name: "S.no",
             selector: (row, index) => index + 1,
+            center: true,
         },
         {
             name: "ID",
             selector: (row) => <EmployeeIdModal data={row.id} />,
+            center: true,
         },
         {
             name: "Name",
@@ -51,15 +53,20 @@ const Index = () => {
         },
         {
             name: "Salary Status",
-            selector: (row) => row.salary_status,
+            selector: (row) => (
+                <h6 className="f-12 color-primary">{row.salary_status}</h6>
+            ),
+            center: true,
         },
         {
             name: "Amount Paid",
             selector: (row) => row.amount_paid,
+            center: true,
         },
         {
             name: "Action",
             selector: (row) => <img src={EditPencil} alt="" />,
+            center: true,
         },
     ];
 
