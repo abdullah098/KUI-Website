@@ -23,7 +23,7 @@ export const columns = [
         name: "Category",
         selector: (row) => (
             <InertiaLink href={`/expenses/${row.id}`}>
-                {row.category}
+                <u className="color-persian-blue"> {row.category} </u>
             </InertiaLink>
         ),
     },

@@ -62,7 +62,7 @@ const ImportModel = () => {
             >
                 <div className="row">
                     <h4 className="f-14 fw-400">File Upload</h4>
-                    <Dragger {...props}>
+                    <Dragger {...props} className="file-upload-btn">
                         <p className="ant-upload-drag-icon">
                             <InboxOutlined />
                         </p>
@@ -71,7 +71,12 @@ const ImportModel = () => {
                     </Dragger>
 
                     <div className="d-flex justify-content-end mt-23">
-                        <Button className="mr-16 button-default">Cancel</Button>
+                        <Button
+                            className="mr-16 button-default cancel-btn"
+                            onClick={handleCancel}
+                        >
+                            Cancel
+                        </Button>
                         <Button className="button-default btn__create">
                             Create
                         </Button>

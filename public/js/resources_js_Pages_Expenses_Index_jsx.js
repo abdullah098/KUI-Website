@@ -15576,10 +15576,63 @@ Schema.validators = validators;
 
 /***/ }),
 
-/***/ "./resources/js/Components/Common/AddExpenseBtn.jsx":
-/*!**********************************************************!*\
-  !*** ./resources/js/Components/Common/AddExpenseBtn.jsx ***!
-  \**********************************************************/
+/***/ "./resources/js/Components/Common/Antd/FormInput.jsx":
+/*!***********************************************************!*\
+  !*** ./resources/js/Components/Common/Antd/FormInput.jsx ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/form/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/input/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Assets_icons_search_icon_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../Assets/icons/search-icon.svg */ "./resources/js/Assets/icons/search-icon.svg");
+var _excluded = ["label", "name", "placeholder", "handler", "type"];
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+
+
+
+
+var FormInput = function FormInput(_ref) {
+  var label = _ref.label,
+      name = _ref.name,
+      placeholder = _ref.placeholder,
+      handler = _ref.handler,
+      type = _ref.type,
+      rest = _objectWithoutProperties(_ref, _excluded);
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["default"].Item, _extends({
+    name: name,
+    label: label
+  }, rest), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    prefix: type === "search" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      src: _Assets_icons_search_icon_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
+      alt: ""
+    }) : "",
+    className: "primary-search",
+    placeholder: type === "search" ? "Search" : placeholder,
+    onChange: handler
+  }));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FormInput);
+
+/***/ }),
+
+/***/ "./resources/js/Components/Expenses/AddExpenseBtn.jsx":
+/*!************************************************************!*\
+  !*** ./resources/js/Components/Expenses/AddExpenseBtn.jsx ***!
+  \************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -15593,10 +15646,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/message/index.js");
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/button/index.js");
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/modal/index.js");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/input/index.js");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/space/index.js");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/date-picker/index.js");
-/* harmony import */ var _ant_design_icons__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ant-design/icons */ "./node_modules/@ant-design/icons/es/icons/InboxOutlined.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/form/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/input/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/space/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/date-picker/index.js");
+/* harmony import */ var _ant_design_icons__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @ant-design/icons */ "./node_modules/@ant-design/icons/es/icons/InboxOutlined.js");
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -15671,7 +15727,18 @@ var AddExpenseBtn = function AddExpenseBtn() {
     onDrop: function onDrop(e) {
       console.log("Dropped files", e.dataTransfer.files);
     }
+  }; // {
+  //     form
+  // }
+
+  var onFinish = function onFinish(values) {
+    console.log("Success:", values);
   };
+
+  var onFinishFailed = function onFinishFailed(errorInfo) {
+    console.log("Failed:", errorInfo);
+  };
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "btn__expense mr-20",
     onClick: showModal
@@ -15681,162 +15748,162 @@ var AddExpenseBtn = function AddExpenseBtn() {
     onOk: handleOk,
     onCancel: handleCancel,
     footer: null
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    onFinish: onFinish,
+    onFinishFailed: onFinishFailed,
+    layout: "vertical"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", {
     className: "f-18 fw-600"
   }, "Add Expense"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "col-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    htmlFor: ""
-  }, "Select Collage"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"].Item, {
+    label: "Select Collage",
+    name: "select_collage",
+    rules: [{
+      required: true,
+      message: "Please select collage!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_1__["default"], {
     defaultValue: "KIU",
     style: {
       width: "100%"
     },
     onChange: handleChange,
-    className: "mb-20"
+    className: "select-dropdown-custom"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Option, {
     value: "kiu"
   }, "KIU"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Option, {
     value: "kui"
-  }, "KUI")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    htmlFor: ""
-  }, "Payment Method"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, "KUI"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"].Item, {
+    label: "Payment Method",
+    name: "payment_method",
+    rules: [{
+      required: true,
+      message: "Please select Payment Method!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_1__["default"], {
     defaultValue: "Cash",
     style: {
       width: "100%"
     },
     onChange: handleChange,
-    className: "mb-20"
+    className: "select-dropdown-custom"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Option, {
     value: "cash"
   }, "Cash"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Option, {
     value: "online"
-  }, "Online")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    htmlFor: ""
-  }, "Bank Name"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    className: "mb-20",
+  }, "Online"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"].Item, {
+    label: "Bank Name",
+    name: "bank_name",
+    rules: [{
+      required: true,
+      message: "Please input your BankName!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    className: "custom-input",
     placeholder: "Bank Name"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    htmlFor: ""
-  }, "Bank Country"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"].Item, {
+    label: "Bank Country",
+    name: "bank_country",
+    rules: [{
+      required: true,
+      message: "Please Select Bank Country!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_1__["default"], {
     defaultValue: "Aaa",
     style: {
       width: "100%"
     },
     onChange: handleChange,
-    className: "mb-20"
+    className: "select-dropdown-custom"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Option, {
     value: "aaa"
   }, "Aaa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Option, {
     value: "bbb"
-  }, "Bbb")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    htmlFor: ""
-  }, "Payment Date"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "Bbb"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"].Item, {
+    label: "Payment Date",
+    name: "payment_date",
+    rules: [{
+      required: true,
+      message: "Please Select Payment Date!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["default"], {
     direction: "vertical",
     className: "mb-20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    className: "custom-input",
     onChange: onChangeDate
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "col-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    htmlFor: ""
-  }, "Expense Category *"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"].Item, {
+    label: "Expense Category",
+    name: "expense_category",
+    rules: [{
+      required: true,
+      message: "Please Select Expense Category!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_1__["default"], {
     defaultValue: "KIU",
     style: {
       width: "100%"
     },
     onChange: handleChange,
-    className: "mb-20"
+    className: "select-dropdown-custom"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Option, {
     value: "kiu"
   }, "KIU"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Option, {
     value: "kui"
-  }, "KUI")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    htmlFor: ""
-  }, "Paid to"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    className: "mb-20",
+  }, "KUI"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"].Item, {
+    label: "Paid to",
+    name: "paid_to",
+    rules: [{
+      required: true,
+      message: "Please Enter Paid to!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    className: "custom-input",
     placeholder: "Paid to"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    htmlFor: ""
-  }, "Bank Branch"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    className: "mb-20",
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"].Item, {
+    label: "Bank Branch",
+    name: "bank_branch",
+    rules: [{
+      required: true,
+      message: "Please Enter bank Branch!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    className: "custom-input",
     placeholder: "Bank Branch"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    htmlFor: ""
-  }, "To Account No."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    className: "mb-20",
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"].Item, {
+    label: "To Account No.",
+    name: "to_account_no",
+    rules: [{
+      required: true,
+      message: "Please Enter to account number!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    className: "custom-input",
     placeholder: "To Account No."
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Dragger, props, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Dragger, _extends({}, props, {
+    className: "file-upload-btn"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "ant-upload-drag-icon"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ant_design_icons__WEBPACK_IMPORTED_MODULE_9__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ant_design_icons__WEBPACK_IMPORTED_MODULE_10__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "ant-upload-text"
   }, "Drag & Drop files"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "ant-upload-hint"
   }, "Browse"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "d-flex justify-content-end mt-23"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "mr-16 button-default"
+    className: "mr-16 button-default cancel-btn",
+    onClick: handleCancel
   }, "Cancel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "button-default btn__create"
-  }, "Create")))));
+  }, "Create"))))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AddExpenseBtn);
-
-/***/ }),
-
-/***/ "./resources/js/Components/Common/Antd/FormInput.jsx":
-/*!***********************************************************!*\
-  !*** ./resources/js/Components/Common/Antd/FormInput.jsx ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/form/index.js");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/input/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Assets_icons_search_icon_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../Assets/icons/search-icon.svg */ "./resources/js/Assets/icons/search-icon.svg");
-var _excluded = ["label", "name", "placeholder", "handler", "type"];
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-
-
-
-
-var FormInput = function FormInput(_ref) {
-  var label = _ref.label,
-      name = _ref.name,
-      placeholder = _ref.placeholder,
-      handler = _ref.handler,
-      type = _ref.type,
-      rest = _objectWithoutProperties(_ref, _excluded);
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["default"].Item, _extends({
-    name: name,
-    label: label
-  }, rest), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    prefix: type === "search" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-      src: _Assets_icons_search_icon_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
-      alt: ""
-    }) : "",
-    className: "primary-search",
-    placeholder: type === "search" ? "Search" : placeholder,
-    onChange: handler
-  }));
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FormInput);
 
 /***/ }),
 
@@ -15876,7 +15943,9 @@ var columns = [{
   selector: function selector(row) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
       href: "/expenses/".concat(row.id)
-    }, row.category);
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("u", {
+      className: "color-persian-blue"
+    }, " ", row.category, " "));
   }
 }, {
   name: "Total Expenses",
@@ -15958,7 +16027,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_common_DataTable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../components/common/DataTable */ "./resources/js/components/common/DataTable.jsx");
 /* harmony import */ var _Components_Common_Antd_FormInput__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../Components/Common/Antd/FormInput */ "./resources/js/Components/Common/Antd/FormInput.jsx");
 /* harmony import */ var _Constants_TableColumns_Expenses__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Constants/TableColumns/Expenses */ "./resources/js/Constants/TableColumns/Expenses.js");
-/* harmony import */ var _Components_Common_AddExpenseBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../Components/Common/AddExpenseBtn */ "./resources/js/Components/Common/AddExpenseBtn.jsx");
+/* harmony import */ var _Components_Expenses_AddExpenseBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../Components/Expenses/AddExpenseBtn */ "./resources/js/Components/Expenses/AddExpenseBtn.jsx");
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/button/index.js");
 /* harmony import */ var _Assets_icons_addCircle_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Assets/icons/addCircle.svg */ "./resources/js/Assets/icons/addCircle.svg");
 
@@ -15971,6 +16040,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Index = function Index() {
+  // data for the table to be displayed
   var data = [{
     id: 0,
     category: "Inventory",
@@ -15986,7 +16056,8 @@ var Index = function Index() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "primary-table"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_common_DataTable__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    columns: _Constants_TableColumns_Expenses__WEBPACK_IMPORTED_MODULE_4__.columns,
+    columns: _Constants_TableColumns_Expenses__WEBPACK_IMPORTED_MODULE_4__.columns // columns for the table imported from constants
+    ,
     data: data,
     pagination: true,
     keyField: "id"
@@ -16004,7 +16075,7 @@ var Index = function Index() {
     className: "me-3",
     src: _Assets_icons_addCircle_svg__WEBPACK_IMPORTED_MODULE_6__["default"],
     alt: ""
-  }), "Create new Category"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Common_AddExpenseBtn__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Common_Antd_FormInput__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), "Create new Category"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Expenses_AddExpenseBtn__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Common_Antd_FormInput__WEBPACK_IMPORTED_MODULE_3__["default"], {
     className: "mb-0",
     type: "search"
   })))))));
@@ -16228,13 +16299,7 @@ function Index(_ref) {
     image: _Assets_icons_creditCard_svg__WEBPACK_IMPORTED_MODULE_11__["default"],
     url: "/payment-account",
     key: 5
-  } // {
-  //     name: "Mail Box",
-  //     image: EmailIcon,
-  //     url: "/mail/inbox",
-  //     key: 4,
-  // },
-  ];
+  }];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", {
     className: "primary-sidebar"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {

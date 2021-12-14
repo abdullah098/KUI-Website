@@ -3765,13 +3765,7 @@ function Index(_ref) {
     image: _Assets_icons_creditCard_svg__WEBPACK_IMPORTED_MODULE_11__["default"],
     url: "/payment-account",
     key: 5
-  } // {
-  //     name: "Mail Box",
-  //     image: EmailIcon,
-  //     url: "/mail/inbox",
-  //     key: 4,
-  // },
-  ];
+  }];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", {
     className: "primary-sidebar"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -3879,6 +3873,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Details = function Details() {
+  // static data for the fields
   var data = [{
     student_id: 120348,
     fees_dor: "Study",

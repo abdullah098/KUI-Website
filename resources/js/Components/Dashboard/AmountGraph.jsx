@@ -70,7 +70,9 @@ const AmountGraph = () => {
         <div className="amount-graph-wrapper mb-24">
             <div className="primary-card-rounded">
                 <div className="area-chart-header d-flex justify-content-between">
-                    <h2 className="f-16 fw-500 mb-24">Cash Inflow / Outflow</h2>
+                    <h2 className="f-16 fw-500 mb-24 text-black">
+                        Cash Inflow / Outflow
+                    </h2>
                     <div className="d-flex align-items-center">
                         <h4 className="f-14 mb-0 me-2">Last</h4>
                         <Select

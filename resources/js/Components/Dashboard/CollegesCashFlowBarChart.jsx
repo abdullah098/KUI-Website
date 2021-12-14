@@ -52,7 +52,9 @@ const CollegesCashFlowBarChart = () => {
         <div className="colleges-chart-wrapper mb-24">
             <div className="primary-card-rounded">
                 <div className="d-flex justify-content-between align-items-center mb-13">
-                    <h2 className="f-16 fw-500">Colleges Cash Flow</h2>
+                    <h2 className="f-16 fw-500 text-black">
+                        Colleges Cash Flow
+                    </h2>
                     <div className="text-start chart-legend f-10 fw-300">
                         <span>
                             <span className="indicator primary-indicator" />

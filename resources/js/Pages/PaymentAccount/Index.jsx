@@ -8,15 +8,26 @@ import { DownOutlined } from "@ant-design/icons";
 import GreenEye from "../../Assets/icons/greenEye.svg";
 import EditIcon from "../../Assets/icons/editPencil.svg";
 import RemoveIcon from "../../Assets/icons/removeIcon.svg";
-import CreateNewAccount from "./CreateNewAccount";
+import CreateNewAccount from "../../Components/PaymentAccount/CreateNewAccount";
+import StatusDropdown from "../../Components/PaymentAccount/StatusDropdown";
 
 const Index = () => {
+    // static data for the table for now
     const data = [
         {
             id: "03215",
             account_number: "03215",
             swift_code: "03215",
             status: "Active",
+            created_at: "2020-05-05",
+            updated_at: "2020-05-05",
+            action: "",
+        },
+        {
+            id: "035",
+            account_number: "03215",
+            swift_code: "03215",
+            status: "Inactive",
             created_at: "2020-05-05",
             updated_at: "2020-05-05",
             action: "",
@@ -45,9 +56,10 @@ const Index = () => {
             center: true,
         },
         {
+            // active inactive dropdown leads to its component
             name: "Status",
             selector: (row) => (
-                <Button className="btn__active">{row.status}</Button>
+                <StatusDropdown dataId={row.id} dataStatus={row.status} />
             ),
             center: true,
         },
@@ -84,6 +96,7 @@ const Index = () => {
 
             <div className="primary-card">
                 <div className="primary-table">
+                    {/* data table  */}
                     <DataTable
                         columns={columns}
                         data={data}
@@ -98,7 +111,10 @@ const Index = () => {
                             </div>
 
                             <div className="d-flex align-items-center">
+                                {/* create new account  */}
                                 <CreateNewAccount />
+
+                                {/* search bar  */}
                                 <FormInput className="mb-0" type="search" />
                             </div>
                         </div>

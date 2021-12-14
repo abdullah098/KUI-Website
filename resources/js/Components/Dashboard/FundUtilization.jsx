@@ -48,7 +48,9 @@ const FundUtilization = () => {
         <div className="funds-pie-chart-wrapper">
             <div className="primary-card-rounded">
                 <div className="pie-chart-header justify-content-between">
-                    <h2 className="f-16 fw-500 mb-18">Fund utilization</h2>
+                    <h2 className="f-16 fw-500 mb-18 text-black">
+                        Fund utilization
+                    </h2>
                 </div>
 
                 <div className="pie-chart-container">

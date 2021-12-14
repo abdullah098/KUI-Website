@@ -54050,14 +54050,6 @@ var map = {
 		"./resources/js/Pages/Dashboard/RevenueAllCountries.jsx",
 		"resources_js_Pages_Dashboard_RevenueAllCountries_jsx"
 	],
-	"./Employees/EmployeeIdModal": [
-		"./resources/js/Pages/Employees/EmployeeIdModal.jsx",
-		"resources_js_Pages_Employees_EmployeeIdModal_jsx"
-	],
-	"./Employees/EmployeeIdModal.jsx": [
-		"./resources/js/Pages/Employees/EmployeeIdModal.jsx",
-		"resources_js_Pages_Employees_EmployeeIdModal_jsx"
-	],
 	"./Employees/Index": [
 		"./resources/js/Pages/Employees/Index.jsx",
 		"resources_js_Pages_Employees_Index_jsx"
@@ -54105,62 +54097,6 @@ var map = {
 	"./FinancialPayment/Index.jsx": [
 		"./resources/js/Pages/FinancialPayment/Index.jsx",
 		"resources_js_Pages_FinancialPayment_Index_jsx"
-	],
-	"./MailBox/Draft": [
-		"./resources/js/Pages/MailBox/Draft.jsx",
-		"resources_js_Pages_MailBox_Draft_jsx"
-	],
-	"./MailBox/Draft.jsx": [
-		"./resources/js/Pages/MailBox/Draft.jsx",
-		"resources_js_Pages_MailBox_Draft_jsx"
-	],
-	"./MailBox/Inbox": [
-		"./resources/js/Pages/MailBox/Inbox.jsx",
-		"resources_js_Pages_MailBox_Inbox_jsx"
-	],
-	"./MailBox/Inbox.jsx": [
-		"./resources/js/Pages/MailBox/Inbox.jsx",
-		"resources_js_Pages_MailBox_Inbox_jsx"
-	],
-	"./MailBox/InboxDetails": [
-		"./resources/js/Pages/MailBox/InboxDetails.jsx",
-		"resources_js_Pages_MailBox_InboxDetails_jsx"
-	],
-	"./MailBox/InboxDetails.jsx": [
-		"./resources/js/Pages/MailBox/InboxDetails.jsx",
-		"resources_js_Pages_MailBox_InboxDetails_jsx"
-	],
-	"./MailBox/Sent": [
-		"./resources/js/Pages/MailBox/Sent.jsx",
-		"resources_js_Pages_MailBox_Sent_jsx"
-	],
-	"./MailBox/Sent.jsx": [
-		"./resources/js/Pages/MailBox/Sent.jsx",
-		"resources_js_Pages_MailBox_Sent_jsx"
-	],
-	"./MailBox/SentDetails": [
-		"./resources/js/Pages/MailBox/SentDetails.jsx",
-		"resources_js_Pages_MailBox_SentDetails_jsx"
-	],
-	"./MailBox/SentDetails.jsx": [
-		"./resources/js/Pages/MailBox/SentDetails.jsx",
-		"resources_js_Pages_MailBox_SentDetails_jsx"
-	],
-	"./MailBox/Trash": [
-		"./resources/js/Pages/MailBox/Trash.jsx",
-		"resources_js_Pages_MailBox_Trash_jsx"
-	],
-	"./MailBox/Trash.jsx": [
-		"./resources/js/Pages/MailBox/Trash.jsx",
-		"resources_js_Pages_MailBox_Trash_jsx"
-	],
-	"./PaymentAccount/CreateNewAccount": [
-		"./resources/js/Pages/PaymentAccount/CreateNewAccount.jsx",
-		"resources_js_Pages_PaymentAccount_CreateNewAccount_jsx"
-	],
-	"./PaymentAccount/CreateNewAccount.jsx": [
-		"./resources/js/Pages/PaymentAccount/CreateNewAccount.jsx",
-		"resources_js_Pages_PaymentAccount_CreateNewAccount_jsx"
 	],
 	"./PaymentAccount/Index": [
 		"./resources/js/Pages/PaymentAccount/Index.jsx",
@@ -54327,7 +54263,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Pages_Auth_Login_jsx":1,"resources_js_Pages_Dashboard_Index_jsx":1,"resources_js_Pages_Dashboard_RevenueAllCountries_jsx":1,"resources_js_Pages_Employees_EmployeeIdModal_jsx":1,"resources_js_Pages_Employees_Index_jsx":1,"resources_js_Pages_Expenses_Details_jsx":1,"resources_js_Pages_Expenses_FullDetail_jsx":1,"resources_js_Pages_Expenses_Index_jsx":1,"resources_js_Pages_FinancialPayment_Details_jsx":1,"resources_js_Pages_FinancialPayment_Index_jsx":1,"resources_js_Pages_MailBox_Draft_jsx":1,"resources_js_Pages_MailBox_Inbox_jsx":1,"resources_js_Pages_MailBox_InboxDetails_jsx":1,"resources_js_Pages_MailBox_Sent_jsx":1,"resources_js_Pages_MailBox_SentDetails_jsx":1,"resources_js_Pages_MailBox_Trash_jsx":1,"resources_js_Pages_PaymentAccount_CreateNewAccount_jsx":1,"resources_js_Pages_PaymentAccount_Index_jsx":1,"resources_js_Pages_StudentWallets_Index_jsx":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_Auth_Login_jsx":1,"resources_js_Pages_Dashboard_Index_jsx":1,"resources_js_Pages_Dashboard_RevenueAllCountries_jsx":1,"resources_js_Pages_Employees_Index_jsx":1,"resources_js_Pages_Expenses_Details_jsx":1,"resources_js_Pages_Expenses_FullDetail_jsx":1,"resources_js_Pages_Expenses_Index_jsx":1,"resources_js_Pages_FinancialPayment_Details_jsx":1,"resources_js_Pages_FinancialPayment_Index_jsx":1,"resources_js_Pages_PaymentAccount_Index_jsx":1,"resources_js_Pages_StudentWallets_Index_jsx":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

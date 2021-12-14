@@ -1,31 +1,41 @@
 import React, { useState } from "react";
-import { Button, Modal, Input, Select } from "antd";
+import { Button, Modal, Input, Select, Form } from "antd";
 
 import AddCircle from "../../Assets/icons/addCircle.svg";
 
 const CreateNewEmployee = () => {
+    {
+        // modal
+    }
     const [isModalVisible, setIsModalVisible] = useState(false);
-
     const showModal = () => {
         setIsModalVisible(true);
     };
-
     const handleOk = () => {
         setIsModalVisible(false);
     };
-
     const handleCancel = () => {
         setIsModalVisible(false);
     };
 
-    // {
-    //     select
-    // }
-    const { Option } = Select;
-
-    function handleChange(value) {
-        console.log(`selected ${value}`);
+    {
+        // select
     }
+    const { Option } = Select;
+    const handleChange = (value) => {
+        console.log(`selected ${value}`);
+    };
+
+    {
+        // from
+    }
+    const onFinish = (values) => {
+        console.log("Success:", values);
+    };
+    const onFinishFailed = (errorInfo) => {
+        console.log("Failed:", errorInfo);
+    };
+
     return (
         <>
             <Button
@@ -43,78 +53,200 @@ const CreateNewEmployee = () => {
                 footer={null}
             >
                 <h4 className="f-18 fw-600">Create New Employee</h4>
-                <div className="row">
-                    <div className="col-6">
-                        <label className="f-14 fw-400">Name</label>
-                        <Input className="f-14 mb-20" placeholder="Name" />
 
-                        <label className="f-14 fw-400 mt-20">Salary</label>
-                        <Input className="f-14 mb-20" placeholder="Salary" />
+                {/* form  */}
+                <Form
+                    onFinish={onFinish}
+                    onFinishFailed={onFinishFailed}
+                    layout="vertical"
+                >
+                    <div className="row">
+                        <div className="col-6">
+                            <Form.Item
+                                label="Name"
+                                name="name"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: "Please input your Name!",
+                                    },
+                                ]}
+                            >
+                                <Input
+                                    className="f-14 custom-input"
+                                    placeholder="Name"
+                                />
+                            </Form.Item>
 
-                        <label className="f-14 fw-400 mt-20">
-                            Bank Country
-                        </label>
-                        <br />
-                        <Select
-                            defaultValue="Pakistan"
-                            style={{ width: "100%" }}
-                            onChange={handleChange}
-                            className="mb-20"
-                        >
-                            <Option value="pakistan">Pakistan</Option>
-                            <Option value="saudia">Saudia</Option>
-                            <Option value="usa">USA</Option>
-                        </Select>
+                            <Form.Item
+                                label="Salary"
+                                name="salary"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: "Please input your Salary!",
+                                    },
+                                ]}
+                            >
+                                <Input
+                                    className="f-14 custom-input"
+                                    placeholder="Salary"
+                                />
+                            </Form.Item>
 
-                        <br />
-                        <label className="f-14 fw-400 mt-20">
-                            Account Number
-                        </label>
-                        <Input
-                            className="f-14 mb-20"
-                            placeholder="Account Number"
-                        />
+                            <Form.Item
+                                label="Bank Country"
+                                name="bankCountry"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message:
+                                            "Please input your Bank Country!",
+                                    },
+                                ]}
+                            >
+                                <Select
+                                    defaultValue="Pakistan"
+                                    style={{ width: "100%" }}
+                                    onChange={handleChange}
+                                    className="select-dropdown-custom"
+                                >
+                                    <Option value="pakistan">Pakistan</Option>
+                                    <Option value="saudia">Saudia</Option>
+                                    <Option value="usa">USA</Option>
+                                </Select>
+                            </Form.Item>
 
-                        <label className="f-14 fw-400 mt-20">
-                            Account Name
-                        </label>
-                        <Input
-                            className="f-14 mb-45"
-                            placeholder="Account Name"
-                        />
+                            <Form.Item
+                                label="Account Number"
+                                name="accountNumber"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message:
+                                            "Please input your Account Number!",
+                                    },
+                                ]}
+                            >
+                                <Input
+                                    className="f-14 custom-input"
+                                    placeholder="Account Number"
+                                />
+                            </Form.Item>
+
+                            <Form.Item
+                                label="Account Name"
+                                name="accountName"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message:
+                                            "Please input your Account Name!",
+                                    },
+                                ]}
+                            >
+                                <Input
+                                    className="f-14 custom-input"
+                                    placeholder="Account Name"
+                                />
+                            </Form.Item>
+                        </div>
+
+                        <div className="col-6">
+                            <Form.Item
+                                label="Designation"
+                                name="designation"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message:
+                                            "Please input your Designation!",
+                                    },
+                                ]}
+                            >
+                                <Input
+                                    className="f-14 custom-input"
+                                    placeholder="Designation"
+                                />
+                            </Form.Item>
+
+                            <Form.Item
+                                label="Bank Name"
+                                name="bankName"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: "Please input your Bank Name!",
+                                    },
+                                ]}
+                            >
+                                <Input
+                                    className="f-14 custom-input"
+                                    placeholder="Bank Name"
+                                />
+                            </Form.Item>
+
+                            <Form.Item
+                                label="Branch"
+                                name="branch"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: "Please input your Branch!",
+                                    },
+                                ]}
+                            >
+                                <Input
+                                    className="f-14 custom-input"
+                                    placeholder="Branch"
+                                />
+                            </Form.Item>
+
+                            <Form.Item
+                                label="IBNA number"
+                                name="ibnaNumber"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message:
+                                            "Please input your IBNA number!",
+                                    },
+                                ]}
+                            >
+                                <Input
+                                    className="f-14 custom-input"
+                                    placeholder="IBNA number"
+                                />
+                            </Form.Item>
+
+                            <Form.Item
+                                label="Bank Swift Code"
+                                name="bankSwiftCode"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message:
+                                            "Please input your Bank Swift Code!",
+                                    },
+                                ]}
+                            >
+                                <Input
+                                    className="f-14 custom-input"
+                                    placeholder="Bank Swift Code"
+                                />
+                            </Form.Item>
+                        </div>
                     </div>
+                </Form>
 
-                    <div className="col-6">
-                        <label className="f-14 fw-400">Designation</label>
-                        <Input
-                            className="f-14 mb-20"
-                            placeholder="Designation"
-                        />
-
-                        <label className="f-14 fw-400 mt-20">Bank Name</label>
-                        <Input className="f-14 mb-20" placeholder="Bank Name" />
-
-                        <label className="f-14 fw-400 mt-20">Branch</label>
-                        <Input className="f-14 mb-20" placeholder="Branch" />
-
-                        <label className="f-14 fw-400 mt-20">IBNA number</label>
-                        <Input
-                            className="f-14 mb-20"
-                            placeholder="IBNA number"
-                        />
-
-                        <label className="f-14 fw-400 mt-20">
-                            Bank Swift Code
-                        </label>
-                        <Input
-                            className="f-14 mb-45"
-                            placeholder="Bank Swift Code"
-                        />
-                    </div>
-                </div>
-
+                {/* button create cancel */}
                 <div className="d-flex justify-content-end">
-                    <Button className="mr-16 button-default">Cancel</Button>
+                    <Button
+                        className="mr-16 button-default"
+                        onClick={handleCancel}
+                    >
+                        Cancel
+                    </Button>
                     <Button className="button-default btn__create">
                         Create
                     </Button>

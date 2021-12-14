@@ -52,12 +52,6 @@ function Index({ children, title, currentPage }) {
             url: "/payment-account",
             key: 5,
         },
-        // {
-        //     name: "Mail Box",
-        //     image: EmailIcon,
-        //     url: "/mail/inbox",
-        //     key: 4,
-        // },
     ];
 
     return (

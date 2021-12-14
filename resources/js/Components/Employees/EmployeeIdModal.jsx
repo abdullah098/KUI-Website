@@ -1,22 +1,22 @@
 import React, { useState } from "react";
-import { Modal, Button } from "antd";
-import { Divider } from "antd";
-import ExportDropdown from "../../Components/Common/ExportDropdown";
+import { Modal, Button, From, Divider } from "antd";
+import ExportDropdown from "../Common/ExportDropdown";
 
 const EmployeeIdModal = ({ data }) => {
+    {
+        // modal
+    }
     const [isModalVisible, setIsModalVisible] = useState(false);
-
     const showModal = () => {
         setIsModalVisible(true);
     };
-
     const handleOk = () => {
         setIsModalVisible(false);
     };
-
     const handleCancel = () => {
         setIsModalVisible(false);
     };
+
     return (
         <>
             <Button onClick={showModal} className="button-default border-0">
@@ -32,6 +32,7 @@ const EmployeeIdModal = ({ data }) => {
                 <div>
                     <h4 className="f-18 fw-600">Details</h4>
                     <Divider />
+
                     <div className="row">
                         <div className="col-6">
                             <div className="d-flex justify-content-between align-items-center color-grey-F8 py-9 px-6">
@@ -113,6 +114,7 @@ const EmployeeIdModal = ({ data }) => {
                             </div>
                         </div>
                     </div>
+
                     <Divider />
 
                     <div className="text-end">

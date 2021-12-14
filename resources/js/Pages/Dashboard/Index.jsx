@@ -11,18 +11,24 @@ import { Select } from "antd";
 const Index = () => {
     const { Option } = Select;
 
+    // session change handler for the select
     const handleChangeSession = (value) => {
         console.log(`selected ${value}`);
     };
+
+    // semester change handler for the select
     const handleChangeSemester = (value) => {
         console.log(`selected ${value}`);
     };
+
     return (
         <Layout currentPage={0}>
             <div className="dashboard-wrapper">
+                {/* upper section header  */}
                 <div className="d-flex align-items-center mb-30">
                     <h4 className="f-18 mb-0 fw-600">Dashboard</h4>
 
+                    {/* select session  */}
                     <div className="d-flex align-items-center ml-89">
                         <h4 className="f-14 mb-0 me-2">Session: </h4>
                         <Select
@@ -36,6 +42,7 @@ const Index = () => {
                         </Select>
                     </div>
 
+                    {/* select semester  */}
                     <div className="semester-select d-flex align-items-center ml-89">
                         <h4 className="f-14 mb-0 me-2">Semester: </h4>
                         <Select
@@ -50,19 +57,19 @@ const Index = () => {
                     </div>
                 </div>
 
+                {/* statistics section */}
                 <div className="row">
+                    {/* left side  */}
                     <div className="col-4">
                         <Statistics />
-
                         <CollegesCashFlowBarChart />
-
                         <Sponsors />
-
                         <FundUtilization />
                     </div>
+
+                    {/* right side  */}
                     <div className="col-8">
                         <AmountGraph />
-
                         <RevenueFromTopCountries />
                     </div>
                 </div>

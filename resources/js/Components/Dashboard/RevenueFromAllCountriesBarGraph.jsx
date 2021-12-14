@@ -2,7 +2,7 @@ import React from "react";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts";
 import { InertiaLink } from "@inertiajs/inertia-react";
 
-const RevenueFromTopCountries = () => {
+const RevenueFromAllCounriesBarGraph = () => {
     const data = [
         {
             name: "UK",
@@ -29,6 +29,12 @@ const RevenueFromTopCountries = () => {
             amt: 2000,
         },
         {
+            name: "Pakistan",
+            uv: 3000,
+            pv: 1398,
+            amt: 2210,
+        },
+        {
             name: "Malaysia",
             uv: 1890,
             pv: 4800,
@@ -46,25 +52,56 @@ const RevenueFromTopCountries = () => {
             pv: 4300,
             amt: 2100,
         },
+        {
+            name: "USA",
+            uv: 3490,
+            pv: 4300,
+            amt: 2100,
+        },
+        {
+            name: "Pakistan",
+            uv: 3000,
+            pv: 1398,
+            amt: 2210,
+        },
+        {
+            name: "Pakistan",
+            uv: 3000,
+            pv: 1398,
+            amt: 2210,
+        },
+        {
+            name: "Pakistan",
+            uv: 3000,
+            pv: 1398,
+            amt: 2210,
+        },
+        {
+            name: "Pakistan",
+            uv: 3000,
+            pv: 1398,
+            amt: 2210,
+        },
+        {
+            name: "Pakistan",
+            uv: 3000,
+            pv: 1398,
+            amt: 2210,
+        },
     ];
 
     return (
-        <div className="revenue-top-countries-wrapper">
+        <div className="revenue-all-countries-wrapper">
             <div className="primary-card-rounded">
                 <div className="d-flex justify-content-between">
                     <h2 className="f-16 fw-500 mb-18 text-black">
-                        Revenue From Top 10 Countries
+                        Revenue From All Countries
                     </h2>
-
-                    <InertiaLink href="/dashboard/revenue-all-countries">
-                        <u>View All</u>
-                    </InertiaLink>
                 </div>
 
                 <ResponsiveContainer width="100%" height="100%">
                     <BarChart
                         width={150}
-                        height={40}
                         data={data}
                         layout="vertical"
                         barSize={17}
@@ -80,4 +117,4 @@ const RevenueFromTopCountries = () => {
     );
 };
 
-export default RevenueFromTopCountries;
+export default RevenueFromAllCounriesBarGraph;

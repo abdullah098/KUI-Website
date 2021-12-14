@@ -47,23 +47,3 @@ Route::get('employees', function () {
 Route::get('payment-account', function () {
     return Inertia::render('PaymentAccount/Index');
 });
-
-
-// Route::get('mail/inbox', function () {
-//     return Inertia::render('MailBox/Inbox');
-// });
-// Route::get('mail/inbox/{id}', function () {
-//     return Inertia::render('MailBox/InboxDetails');
-// });
-// Route::get('mail/sent', function () {
-//     return Inertia::render('MailBox/Sent');
-// });
-// Route::get('mail/sent/{id}', function () {
-//     return Inertia::render('MailBox/SentDetails');
-// });
-// Route::get('mail/draft', function () {
-//     return Inertia::render('MailBox/Draft');
-// });
-// Route::get('mail/trash', function () {
-//     return Inertia::render('MailBox/Trash');
-// });

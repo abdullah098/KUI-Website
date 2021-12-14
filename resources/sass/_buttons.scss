@@ -85,6 +85,12 @@
         border-radius: 4px !important;
     }
 
+    &__reject{
+        color: #d0021b !important;
+        border: 1px solid #d0021b !important;
+        border-radius: 4px !important;
+    }
+
 
     &__expense {
         background: #089752 !important;
@@ -119,9 +125,37 @@
     }
 }
 
-.select-dropdown-custom {
+.cancel-btn {
+    color: #2F2F75 !important;
+    border: 1px solid #2F2F75  !important;
     border-radius: 4px !important;
-    border: 1px solid #E8E8E8 !important;
+
+
 }
+
+.file-upload-btn {
+    background-color: #EFF4FC !important;
+    border: 1px solid #F1F1F1 !important;
+    border-radius: 4px !important;
+}
+
+.cancel-btn-rejected-approve {
+    height: 18px !important;
+    width: 46px !important;
+    font-size: 10px !important;
+    color: #2F2F75 !important;
+    border: 1px solid #2F2F75  !important;
+    border-radius: 4px !important;
+}
+.save-btn-rejected-approve {
+    height: 18px !important;
+    width: 46px !important;
+    font-size: 10px !important;
+    color: #FFFFFF !important;
+    border: 1px solid #2F2F75  !important;
+    border-radius: 4px !important;
+    background-color: #089752 !important;
+}
+
 
 

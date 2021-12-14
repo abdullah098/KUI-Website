@@ -11543,6 +11543,17 @@ html {
   padding-left: 7px !important;
 }
 
+.custom-input, .custom-input:hover {
+  height: 34px !important;
+  background: #ffffff !important;
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+.custom-input input {
+  padding-left: 7px !important;
+}
+
 .export-dropdown-menu .ant-dropdown-menu-item,
 .export-dropdown-menu .ant-dropdown-menu-submenu-title {
   padding: 3px 12px !important;
@@ -11559,6 +11570,14 @@ html {
   border: 1px solid #cbcbcb !important;
   border-radius: 4px !important;
   box-shadow: none !important;
+}
+
+.select-dropdown-custom .ant-select-selector {
+  border-radius: 4px !important;
+  border: 1px solid #E8E8E8 !important;
+  box-shadow: none !important;
+  background: #ffffff !important;
+  height: 34px !important;
 }
 
 .ant-pagination-options::before {
@@ -11772,6 +11791,11 @@ html::-webkit-scrollbar-thumb {
   border: 1px solid #089752 !important;
   border-radius: 4px !important;
 }
+.btn__reject {
+  color: #d0021b !important;
+  border: 1px solid #d0021b !important;
+  border-radius: 4px !important;
+}
 .btn__expense {
   background: #089752 !important;
   color: #FFFFFF !important;
@@ -11800,9 +11824,35 @@ html::-webkit-scrollbar-thumb {
   border-radius: 4px !important;
 }
 
-.select-dropdown-custom {
+.cancel-btn {
+  color: #2F2F75 !important;
+  border: 1px solid #2F2F75 !important;
   border-radius: 4px !important;
-  border: 1px solid #E8E8E8 !important;
+}
+
+.file-upload-btn {
+  background-color: #EFF4FC !important;
+  border: 1px solid #F1F1F1 !important;
+  border-radius: 4px !important;
+}
+
+.cancel-btn-rejected-approve {
+  height: 18px !important;
+  width: 46px !important;
+  font-size: 10px !important;
+  color: #2F2F75 !important;
+  border: 1px solid #2F2F75 !important;
+  border-radius: 4px !important;
+}
+
+.save-btn-rejected-approve {
+  height: 18px !important;
+  width: 46px !important;
+  font-size: 10px !important;
+  color: #FFFFFF !important;
+  border: 1px solid #2F2F75 !important;
+  border-radius: 4px !important;
+  background-color: #089752 !important;
 }
 
 .primary-sidebar {
@@ -12155,6 +12205,11 @@ main {
   width: 21px;
   height: 9px;
   border-radius: 4px;
+}
+
+.text-area-custom {
+  height: 70px !important;
+  width: 206px !important;
 }
 
 .messages-wrapper .container-sidebar {
@@ -13175,6 +13230,11 @@ main {
 .revenue-top-countries-wrapper .primary-card-rounded {
   height: 565px !important;
   padding: 29px 30px;
+}
+
+.revenue-all-countries-wrapper .primary-card-rounded {
+  padding: 29px 30px;
+  height: 1000px !important;
 }
 
 .custom-tooltip {

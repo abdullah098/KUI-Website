@@ -7,7 +7,7 @@ const Sponsors = () => {
             <div className="sponcors-wrapper mb-24">
                 <div className="primary-card-rounded">
                     <div className="sponcors-card-header justify-content-between border-bottom-1">
-                        <h2 className="f-16 fw-500">Sponsors</h2>
+                        <h2 className="f-16 fw-500 text-black">Sponsors</h2>
                     </div>
 
                     <div

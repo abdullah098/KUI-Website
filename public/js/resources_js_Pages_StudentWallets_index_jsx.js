@@ -9314,18 +9314,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layout_Index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../layout/Index */ "./resources/js/layout/Index.jsx");
 /* harmony import */ var _components_common_DataTable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/common/DataTable */ "./resources/js/components/common/DataTable.jsx");
 /* harmony import */ var _Components_Common_Antd_FormInput__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/Common/Antd/FormInput */ "./resources/js/Components/Common/Antd/FormInput.jsx");
-/* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
-/* harmony import */ var _Assets_icons_greenEye_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Assets/icons/greenEye.svg */ "./resources/js/Assets/icons/greenEye.svg");
-
-
-
-
 
 
 
 
 
 var Index = function Index() {
+  // data and columns are coming from the server side but statically set here for now
   var data = [{
     id: 0,
     wallet_id: "03215",
@@ -9623,13 +9618,7 @@ function Index(_ref) {
     image: _Assets_icons_creditCard_svg__WEBPACK_IMPORTED_MODULE_11__["default"],
     url: "/payment-account",
     key: 5
-  } // {
-  //     name: "Mail Box",
-  //     image: EmailIcon,
-  //     url: "/mail/inbox",
-  //     key: 4,
-  // },
-  ];
+  }];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", {
     className: "primary-sidebar"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -11269,21 +11258,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/financialPayment.svg?483e3954e8ad7d0360cb300ff2726421");
-
-/***/ }),
-
-/***/ "./resources/js/Assets/icons/greenEye.svg":
-/*!************************************************!*\
-  !*** ./resources/js/Assets/icons/greenEye.svg ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/greenEye.svg?af4b557c7723d47c12b6e05a15d00036");
 
 /***/ }),
 

@@ -7,7 +7,7 @@ const Statistics = () => {
         <div className="row statistics-wrapper mb-24">
             <div className="col-12">
                 <div className="primary-card-rounded">
-                    <h2 className="f-16 fw-500 mb-18">Finance</h2>
+                    <h2 className="f-16 fw-500 mb-18 text-black">Finance</h2>
                     <div className="d-flex justify-content-between">
                         <img src={Bars} alt="" className="mr-30" />
                         <div className="f-12 fw-600 text-end">

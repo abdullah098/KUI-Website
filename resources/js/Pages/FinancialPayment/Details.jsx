@@ -5,6 +5,7 @@ import { InertiaLink } from "@inertiajs/inertia-react";
 import ArrowBack from "../../Assets/icons/button-arrow-back.svg";
 
 const Details = () => {
+    // static data for the fields
     const data = [
         {
             student_id: 120348,
@@ -23,6 +24,7 @@ const Details = () => {
         <Layout currentPage={1}>
             <div className="payment-receipt-wrapper">
                 <div className="payment-receipt-wrapper__header">
+                    {/* back button  */}
                     <InertiaLink href="" className="button-back">
                         <img src={ArrowBack} />
                         <span className="f-18 fw-600 color-secondary">
@@ -31,6 +33,8 @@ const Details = () => {
                     </InertiaLink>
 
                     <Divider className="primary-divider" />
+
+                    {/* all data fields  */}
                     <div className="container-fluid p-0">
                         <h4 className="f-14 fw-500">Payment receipt</h4>
                         <div className="row">

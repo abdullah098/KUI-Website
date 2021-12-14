@@ -15930,7 +15930,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/select/index.js");
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/button/index.js");
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/modal/index.js");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/input/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/form/index.js");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/input/index.js");
 /* harmony import */ var _Assets_icons_addCircle_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Assets/icons/addCircle.svg */ "./resources/js/Assets/icons/addCircle.svg");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -15949,6 +15950,9 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var CreateNewEmployee = function CreateNewEmployee() {
+  {// modal
+  }
+
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
       _useState2 = _slicedToArray(_useState, 2),
       isModalVisible = _useState2[0],
@@ -15964,16 +15968,26 @@ var CreateNewEmployee = function CreateNewEmployee() {
 
   var handleCancel = function handleCancel() {
     setIsModalVisible(false);
-  }; // {
-  //     select
-  // }
+  };
 
-
+  {// select
+  }
   var Option = antd__WEBPACK_IMPORTED_MODULE_2__["default"].Option;
 
-  function handleChange(value) {
+  var handleChange = function handleChange(value) {
     console.log("selected ".concat(value));
+  };
+
+  {// from
   }
+
+  var onFinish = function onFinish(values) {
+    console.log("Success:", values);
+  };
+
+  var onFinishFailed = function onFinishFailed(errorInfo) {
+    console.log("Failed:", errorInfo);
+  };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["default"], {
     className: "btn__create-new-category mr-20 border-0 bg-transparent",
@@ -15990,76 +16004,131 @@ var CreateNewEmployee = function CreateNewEmployee() {
     footer: null
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", {
     className: "f-18 fw-600"
-  }, "Create New Employee"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, "Create New Employee"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    onFinish: onFinish,
+    onFinishFailed: onFinishFailed,
+    layout: "vertical"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "col-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    className: "f-14 fw-400"
-  }, "Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "f-14 mb-20",
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"].Item, {
+    label: "Name",
+    name: "name",
+    rules: [{
+      required: true,
+      message: "Please input your Name!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: "f-14 custom-input",
     placeholder: "Name"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    className: "f-14 fw-400 mt-20"
-  }, "Salary"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "f-14 mb-20",
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"].Item, {
+    label: "Salary",
+    name: "salary",
+    rules: [{
+      required: true,
+      message: "Please input your Salary!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: "f-14 custom-input",
     placeholder: "Salary"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    className: "f-14 fw-400 mt-20"
-  }, "Bank Country"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"].Item, {
+    label: "Bank Country",
+    name: "bankCountry",
+    rules: [{
+      required: true,
+      message: "Please input your Bank Country!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["default"], {
     defaultValue: "Pakistan",
     style: {
       width: "100%"
     },
     onChange: handleChange,
-    className: "mb-20"
+    className: "select-dropdown-custom"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Option, {
     value: "pakistan"
   }, "Pakistan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Option, {
     value: "saudia"
   }, "Saudia"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Option, {
     value: "usa"
-  }, "USA")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    className: "f-14 fw-400 mt-20"
-  }, "Account Number"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "f-14 mb-20",
+  }, "USA"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"].Item, {
+    label: "Account Number",
+    name: "accountNumber",
+    rules: [{
+      required: true,
+      message: "Please input your Account Number!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: "f-14 custom-input",
     placeholder: "Account Number"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    className: "f-14 fw-400 mt-20"
-  }, "Account Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "f-14 mb-45",
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"].Item, {
+    label: "Account Name",
+    name: "accountName",
+    rules: [{
+      required: true,
+      message: "Please input your Account Name!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: "f-14 custom-input",
     placeholder: "Account Name"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "col-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    className: "f-14 fw-400"
-  }, "Designation"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "f-14 mb-20",
-    placeholder: "Designation"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    className: "f-14 fw-400 mt-20"
-  }, "Bank Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "f-14 mb-20",
-    placeholder: "Bank Name"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    className: "f-14 fw-400 mt-20"
-  }, "Branch"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "f-14 mb-20",
-    placeholder: "Branch"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    className: "f-14 fw-400 mt-20"
-  }, "IBNA number"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "f-14 mb-20",
-    placeholder: "IBNA number"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
-    className: "f-14 fw-400 mt-20"
-  }, "Bank Swift Code"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "f-14 mb-45",
-    placeholder: "Bank Swift Code"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "col-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"].Item, {
+    label: "Designation",
+    name: "designation",
+    rules: [{
+      required: true,
+      message: "Please input your Designation!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: "f-14 custom-input",
+    placeholder: "Designation"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"].Item, {
+    label: "Bank Name",
+    name: "bankName",
+    rules: [{
+      required: true,
+      message: "Please input your Bank Name!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: "f-14 custom-input",
+    placeholder: "Bank Name"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"].Item, {
+    label: "Branch",
+    name: "branch",
+    rules: [{
+      required: true,
+      message: "Please input your Branch!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: "f-14 custom-input",
+    placeholder: "Branch"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"].Item, {
+    label: "IBNA number",
+    name: "ibnaNumber",
+    rules: [{
+      required: true,
+      message: "Please input your IBNA number!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: "f-14 custom-input",
+    placeholder: "IBNA number"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_5__["default"].Item, {
+    label: "Bank Swift Code",
+    name: "bankSwiftCode",
+    rules: [{
+      required: true,
+      message: "Please input your Bank Swift Code!"
+    }]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    className: "f-14 custom-input",
+    placeholder: "Bank Swift Code"
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "d-flex justify-content-end"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "mr-16 button-default"
+    className: "mr-16 button-default",
+    onClick: handleCancel
   }, "Cancel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["default"], {
     className: "button-default btn__create"
   }, "Create"))));
@@ -16152,6 +16221,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/modal/index.js");
 /* harmony import */ var _Assets_icons_Import_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Assets/icons/Import.svg */ "./resources/js/Assets/icons/Import.svg");
 /* harmony import */ var _ant_design_icons__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ant-design/icons */ "./node_modules/@ant-design/icons/es/icons/InboxOutlined.js");
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -16230,7 +16301,9 @@ var ImportModel = function ImportModel() {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", {
     className: "f-14 fw-400"
-  }, "File Upload"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Dragger, props, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+  }, "File Upload"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Dragger, _extends({}, props, {
+    className: "file-upload-btn"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "ant-upload-drag-icon"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ant_design_icons__WEBPACK_IMPORTED_MODULE_6__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "ant-upload-text"
@@ -16239,7 +16312,8 @@ var ImportModel = function ImportModel() {
   }, "Browse")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "d-flex justify-content-end mt-23"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "mr-16 button-default"
+    className: "mr-16 button-default cancel-btn",
+    onClick: handleCancel
   }, "Cancel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "button-default btn__create"
   }, "Create")))));
@@ -16249,56 +16323,10 @@ var ImportModel = function ImportModel() {
 
 /***/ }),
 
-/***/ "./resources/js/Hooks/useNavBarScrollAnimate.jsx":
-/*!*******************************************************!*\
-  !*** ./resources/js/Hooks/useNavBarScrollAnimate.jsx ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-var useNavBarScrollAnimate = function useNavBarScrollAnimate() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-      _useState2 = _slicedToArray(_useState, 2),
-      showBG = _useState2[0],
-      setBG = _useState2[1];
-
-  var handleNavBarScroll = function handleNavBarScroll() {
-    setBG(window.scrollY);
-  };
-
-  window.addEventListener("scroll", handleNavBarScroll);
-  return {
-    showBG: showBG
-  };
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useNavBarScrollAnimate);
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Employees/EmployeeIdModal.jsx":
-/*!**********************************************************!*\
-  !*** ./resources/js/Pages/Employees/EmployeeIdModal.jsx ***!
-  \**********************************************************/
+/***/ "./resources/js/Components/Employees/EmployeeIdModal.jsx":
+/*!***************************************************************!*\
+  !*** ./resources/js/Components/Employees/EmployeeIdModal.jsx ***!
+  \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -16310,7 +16338,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/button/index.js");
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/modal/index.js");
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/divider/index.js");
-/* harmony import */ var _Components_Common_ExportDropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Components/Common/ExportDropdown */ "./resources/js/Components/Common/ExportDropdown.jsx");
+/* harmony import */ var _Common_ExportDropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Common/ExportDropdown */ "./resources/js/Components/Common/ExportDropdown.jsx");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -16327,9 +16355,10 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-
 var EmployeeIdModal = function EmployeeIdModal(_ref) {
   var data = _ref.data;
+  {// modal
+  }
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
       _useState2 = _slicedToArray(_useState, 2),
@@ -16445,10 +16474,56 @@ var EmployeeIdModal = function EmployeeIdModal(_ref) {
     className: "f-16 fw-500 mb-0"
   }, "200 (SAR)")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(antd__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "text-end"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Common_ExportDropdown__WEBPACK_IMPORTED_MODULE_1__["default"], null)))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Common_ExportDropdown__WEBPACK_IMPORTED_MODULE_1__["default"], null)))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EmployeeIdModal);
+
+/***/ }),
+
+/***/ "./resources/js/Hooks/useNavBarScrollAnimate.jsx":
+/*!*******************************************************!*\
+  !*** ./resources/js/Hooks/useNavBarScrollAnimate.jsx ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+var useNavBarScrollAnimate = function useNavBarScrollAnimate() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      showBG = _useState2[0],
+      setBG = _useState2[1];
+
+  var handleNavBarScroll = function handleNavBarScroll() {
+    setBG(window.scrollY);
+  };
+
+  window.addEventListener("scroll", handleNavBarScroll);
+  return {
+    showBG: showBG
+  };
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useNavBarScrollAnimate);
 
 /***/ }),
 
@@ -16472,8 +16547,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Components_Common_ImportModel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Components/Common/ImportModel */ "./resources/js/Components/Common/ImportModel.jsx");
 /* harmony import */ var _Assets_icons_editPencil_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Assets/icons/editPencil.svg */ "./resources/js/Assets/icons/editPencil.svg");
 /* harmony import */ var _Components_Common_CreateNewEmployee__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../Components/Common/CreateNewEmployee */ "./resources/js/Components/Common/CreateNewEmployee.jsx");
-/* harmony import */ var _EmployeeIdModal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./EmployeeIdModal */ "./resources/js/Pages/Employees/EmployeeIdModal.jsx");
-
+/* harmony import */ var _Components_Employees_EmployeeIdModal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../Components/Employees/EmployeeIdModal */ "./resources/js/Components/Employees/EmployeeIdModal.jsx");
 
 
 
@@ -16486,6 +16560,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Index = function Index() {
+  // static data fro the table for now
   var data = [{
     id: "09253",
     name: "Inventory",
@@ -16504,7 +16579,7 @@ var Index = function Index() {
   }, {
     name: "ID",
     selector: function selector(row) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_EmployeeIdModal__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Components_Employees_EmployeeIdModal__WEBPACK_IMPORTED_MODULE_8__["default"], {
         data: row.id
       });
     }
@@ -16546,15 +16621,15 @@ var Index = function Index() {
         alt: ""
       });
     }
-  }];
+  }]; // select handlers
 
-  function onChange(value) {
+  var onChange = function onChange(value) {
     console.log("selected ".concat(value));
-  }
+  };
 
-  function onSearch(val) {
+  var onSearch = function onSearch(val) {
     console.log("search:", val);
-  }
+  };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_layout_Index__WEBPACK_IMPORTED_MODULE_1__["default"], {
     currentPage: 4
@@ -16585,7 +16660,7 @@ var Index = function Index() {
     showSearch: true,
     placeholder: "All",
     optionFilterProp: "children",
-    className: "button-default mr-20",
+    className: "select-dropdown-custom mr-20",
     style: {
       width: 95
     },
@@ -16826,13 +16901,7 @@ function Index(_ref) {
     image: _Assets_icons_creditCard_svg__WEBPACK_IMPORTED_MODULE_11__["default"],
     url: "/payment-account",
     key: 5
-  } // {
-  //     name: "Mail Box",
-  //     image: EmailIcon,
-  //     url: "/mail/inbox",
-  //     key: 4,
-  // },
-  ];
+  }];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", {
     className: "primary-sidebar"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {

@@ -2,12 +2,9 @@ import React from "react";
 import Layout from "../../layout/Index";
 import DataTable from "../../components/common/DataTable";
 import FormInput from "../../Components/Common/Antd/FormInput";
-import { InertiaLink } from "@inertiajs/inertia-react";
-import { Menu, Dropdown, Button } from "antd";
-import { DownOutlined } from "@ant-design/icons";
-import GreenEye from "../../Assets/icons/greenEye.svg";
 
 const Index = () => {
+    // data and columns are coming from the server side but statically set here for now
     const data = [
         {
             id: 0,
@@ -75,10 +72,13 @@ const Index = () => {
 
     return (
         <Layout currentPage={3}>
+            {/* heading  */}
             <h1 className="f-14 fw-600 mb-20">Student wallets</h1>
 
+            {/* data table includeing search bar */}
             <div className="primary-card">
                 <div className="primary-table">
+                    {/* data table */}
                     <DataTable
                         columns={columns}
                         data={data}
@@ -92,6 +92,7 @@ const Index = () => {
                                 </h2>
                             </div>
 
+                            {/* search bar goes here */}
                             <div className="d-flex align-items-center">
                                 <FormInput className="mb-0" type="search" />
                             </div>

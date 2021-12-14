@@ -3,9 +3,12 @@ import Layout from "../../layout/Index";
 import DataTable from "../../components/common/DataTable";
 import FormInput from "../../Components/Common/Antd/FormInput";
 import { InertiaLink } from "@inertiajs/inertia-react";
-import { columns } from "../../Constants/TableColumns/FinancialPayment";
+import { Button } from "antd";
+import GreenEye from "../../Assets/icons/greenEye.svg";
+import StatusDropdown from "../../Components/FinancialPayment/StatusDropdown";
 
 const Index = () => {
+    // data from table and colums are hardcoded for now
     const data = [
         {
             id: 0,
@@ -24,22 +27,76 @@ const Index = () => {
             payment_method: "Bank Transfer",
             semester: 6,
             created_by: "John Deo",
-            status: "Approved",
+            status: "Rejected",
             actions: "",
         },
     ];
 
-    // const [visible, setVisible] = React.useState(false);
-    // const handleVisibilty = () => {
-    //     setVisible(true);
-    // };
+    const columns = [
+        {
+            name: "S.no",
+            selector: (row, index) => index + 1,
+            center: true,
+        },
+        {
+            name: "ID",
+            selector: (row) => row.id,
+            center: true,
+        },
+        {
+            name: "Student Name",
+            selector: (row) => row.student_name,
+            center: true,
+        },
+        {
+            name: "Payment Method",
+            selector: (row) => row.payment_method,
+            center: true,
+        },
+        {
+            name: "Semester",
+            selector: (row) => row.semester,
+            center: true,
+        },
+        {
+            name: "Created By",
+            selector: (row) => row.created_by,
+            center: true,
+        },
+        {
+            // this colums is for the status dropdown
+            name: "Status",
+            cell: (keyField) => (
+                <StatusDropdown
+                    dataId={keyField.id}
+                    dataStatus={keyField.status}
+                />
+            ),
+            center: true,
+        },
+        {
+            // this column is for the action buttons that redirect to the details page
+            name: "Actions",
+            cell: (row) => (
+                <InertiaLink href={`/financial-payments/${row.id}`}>
+                    <Button className="border-0 shadow-none">
+                        <img src={GreenEye} alt="" />
+                    </Button>
+                </InertiaLink>
+            ),
+            center: true,
+        },
+    ];
 
     return (
         <Layout currentPage={1}>
+            {/* headding  */}
             <h1 className="f-14 fw-600 mb-20">Financial payments</h1>
 
+            {/* data table section including search bar */}
             <div className="primary-card">
                 <div className="primary-table">
+                    {/* data table  */}
                     <DataTable
                         columns={columns}
                         data={data}
@@ -54,6 +111,7 @@ const Index = () => {
                                 </h2>
                             </div>
 
+                            {/* search bar */}
                             <div className="d-flex align-items-center">
                                 <FormInput className="mb-0" type="search" />
                             </div>

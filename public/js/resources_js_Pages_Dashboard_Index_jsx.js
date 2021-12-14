@@ -3665,7 +3665,7 @@ var AmountGraph = function AmountGraph() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "area-chart-header d-flex justify-content-between"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    className: "f-16 fw-500 mb-24"
+    className: "f-16 fw-500 mb-24 text-black"
   }, "Cash Inflow / Outflow"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "d-flex align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", {
@@ -3813,7 +3813,7 @@ var CollegesCashFlowBarChart = function CollegesCashFlowBarChart() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "d-flex justify-content-between align-items-center mb-13"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    className: "f-16 fw-500"
+    className: "f-16 fw-500 text-black"
   }, "Colleges Cash Flow"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "text-start chart-legend f-10 fw-300"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
@@ -3932,7 +3932,7 @@ var FundUtilization = function FundUtilization() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "pie-chart-header justify-content-between"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    className: "f-16 fw-500 mb-18"
+    className: "f-16 fw-500 mb-18 text-black"
   }, "Fund utilization")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "pie-chart-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -4045,7 +4045,7 @@ var RevenueFromTopCountries = function RevenueFromTopCountries() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "d-flex justify-content-between"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    className: "f-16 fw-500 mb-18"
+    className: "f-16 fw-500 mb-18 text-black"
   }, "Revenue From Top 10 Countries"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.InertiaLink, {
     href: "/dashboard/revenue-all-countries"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("u", null, "View All"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(recharts__WEBPACK_IMPORTED_MODULE_2__.ResponsiveContainer, {
@@ -4099,7 +4099,7 @@ var Sponsors = function Sponsors() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "sponcors-card-header justify-content-between border-bottom-1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    className: "f-16 fw-500"
+    className: "f-16 fw-500 text-black"
   }, "Sponsors")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "sponcors-card-body",
     style: {
@@ -4171,7 +4171,7 @@ var Statistics = function Statistics() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "primary-card-rounded"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
-    className: "f-16 fw-500 mb-18"
+    className: "f-16 fw-500 mb-18 text-black"
   }, "Finance"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "d-flex justify-content-between"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
@@ -4274,11 +4274,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Index = function Index() {
-  var Option = antd__WEBPACK_IMPORTED_MODULE_8__["default"].Option;
+  var Option = antd__WEBPACK_IMPORTED_MODULE_8__["default"].Option; // session change handler for the select
 
   var handleChangeSession = function handleChangeSession(value) {
     console.log("selected ".concat(value));
-  };
+  }; // semester change handler for the select
+
 
   var handleChangeSemester = function handleChangeSemester(value) {
     console.log("selected ".concat(value));
@@ -4452,13 +4453,7 @@ function Index(_ref) {
     image: _Assets_icons_creditCard_svg__WEBPACK_IMPORTED_MODULE_11__["default"],
     url: "/payment-account",
     key: 5
-  } // {
-  //     name: "Mail Box",
-  //     image: EmailIcon,
-  //     url: "/mail/inbox",
-  //     key: 4,
-  // },
-  ];
+  }];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", {
     className: "primary-sidebar"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
